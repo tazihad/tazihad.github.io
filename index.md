@@ -1,4 +1,4 @@
-![alt text](https://avatars0.githubusercontent.com/u/19417232 =250x250)
+![alt text](https://avatars0.githubusercontent.com/u/19417232)
 
 # About me
 My name is Tarek Al ZIhad and I am a software engineer. For now, I am highly interested in Machine Learning and Android Developments. And have a keen Interest in Web Technologies.
