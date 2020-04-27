@@ -18,4 +18,5 @@ Here are some of projects I am currently involved in (or was).
 
 ## Contacts 
 * [LinkedIn](https://www.linkedin.com/in/tazihad/)
+* [GitHub](https://github.com/tazihad/)
 * E-mail: [tazihad@gmail.com](mailto:tazihad@gmail.com)
