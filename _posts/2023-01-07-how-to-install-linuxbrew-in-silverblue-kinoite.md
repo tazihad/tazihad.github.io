@@ -26,7 +26,7 @@ Prerequisite: Distrobox
    sudo yum groupinstall 'Development Tools'  
    sudo yum install procps-ng curl file git perl openssl  
     ```
-5. Follow the Next steps instructions to add Linuxbrew to your PATH and to your bash shell profile script, either `~/.profile` on Debian/Ubuntu or `~/.bash_profile` on CentOS/Fedora/RedHat. The best place is to put it in `~/.bashrc`.  
+5. Follow the Next steps instructions to add Linuxbrew to  your PATH of host system and to your bash shell profile script, either `~/.profile` on Debian/Ubuntu or `~/.bash_profile` on CentOS/Fedora/RedHat. The best place is to put it in `~/.bashrc`.  
    ```bash
    echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
    ```
@@ -36,3 +36,12 @@ Make sure you install package from inside distrobox. But those packages will be 
    distrobox enter linuxbrew
    brew install neofetch
    ```
+   
+Uninstall:  
+To completely remove linuxbrew from system. 
+```bash
+distrobox stop linuxbrew
+distrobox rm linuxbrew
+rm -rf /var/home/linuxbrew
+```
+and remove the linuxbrew env from `~/.bashrc`
