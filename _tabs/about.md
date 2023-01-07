@@ -4,5 +4,5 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+[![tazihad's GitHub stats](https://github-readme-stats.vercel.app/api?username=tazihad)](https://github.com/tazihad)
 {: .prompt-tip }
