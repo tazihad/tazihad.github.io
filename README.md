@@ -37,7 +37,7 @@ Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#d
 
 ## Extra
 Editor [QOwnNotes](https://flathub.org/apps/details/org.qownnotes.QOwnNotes).  
-Fix space indent for code blocks: 3.
+Fix space indent for code blocks: 3.  
 Run Server: `bundle exec jekyll serve`
 
 
