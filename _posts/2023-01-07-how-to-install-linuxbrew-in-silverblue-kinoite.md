@@ -1,5 +1,8 @@
 ---
 title: How to install Brew / LinuxBrew in Fedora Silverblue & Kinoite
+categories:
+- linux
+- silverblue
 ---
 
 Prerequisite: Distrobox  

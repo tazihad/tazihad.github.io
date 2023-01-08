@@ -1,5 +1,8 @@
 ---
 title: Install Veracrypt in Fedora Silverblue & Kinoite
+categories:
+- linux
+- silverblue
 ---
 
 Download Generic Installer *tar.bz2 from [source](https://www.veracrypt.fr/en/Downloads.html "source").  

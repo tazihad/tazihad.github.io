@@ -1,5 +1,8 @@
 ---
 title: 10 Things to do after installing Fedora Silverblue / Kinoite
+categories:
+- linux
+- silverblue
 ---
 
 ![Silverblue Desktop](https://raw.githubusercontent.com/tazihad/tazihad.github.io/main/assets/images/Screenshot_20230107_184440.png)

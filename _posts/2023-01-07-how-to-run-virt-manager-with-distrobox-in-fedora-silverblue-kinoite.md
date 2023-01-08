@@ -1,5 +1,8 @@
 ---
 title: How to run virt-manager in Fedora Silverblue / Kinoite using Distrobox
+categories:
+- linux
+- silverblue
 ---
 
 It's better we create a seperate home folder for our new distrobox.  

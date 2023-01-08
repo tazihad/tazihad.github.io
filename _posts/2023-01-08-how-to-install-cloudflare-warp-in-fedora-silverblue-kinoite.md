@@ -1,5 +1,8 @@
 ---
 title: How to use Cloudflare Warp in Fedora Silverblue & Kinoite using Podman
+categories: 
+- linux
+- silverblue
 ---
 
 You can install Cloudflare WARP in Fedora silverblue by directly laying on the system. Or you can use podman cotainer to pass Cloudflare-warp network using proxy.  
