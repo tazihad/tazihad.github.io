@@ -11,7 +11,7 @@ Install WINE using Flatpak.
 flatpak install flathub org.winehq.Wine
 ```
 
-Create a 32-Bit WINEPREFIX named "IDM" using flatpak winetricks. Install IDM in default location.  
+Create a 32-Bit WINEPREFIX named `IDM` using flatpak winetricks. Install IDM in default location.  
 
 ```bash
 flatpak run --command=winetricks org.winehq.Wine
@@ -19,7 +19,7 @@ flatpak run --command=winetricks org.winehq.Wine
 
 put below script as `idm` in `~/.local/bin/`.  
 Make it executable. `chmod +x ~/.local/bin/idm`  
-> Change username inside it.  
+> Change username and home location inside it.  `/var/home/` for silverblue. For regular distro it's `/home`.  
 
 ```bash
 #!/bin/bash
