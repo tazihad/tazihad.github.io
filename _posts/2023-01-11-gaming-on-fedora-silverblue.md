@@ -49,15 +49,15 @@ flatpak install flathub com.valvesoftware.Steam
 ```
 
 Now use Flatseal to set permission to access folders or drive other than the default location.  Add location to `Other files`.  
-![flatseal permission](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_151006.png)
+![flatseal permission]({{ BASE_PATH }}/assets/images/Screenshot_20230111_151006.png)
   
 
 Open Steam. From Settings enable `Enable Steam Play for supported titles`. And `Enable Steam Play for all other titles`. Use any version. from drop down. `Proton Experimental` is fine.  
-![steam play](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_151427.png)
+![steam play]({{ BASE_PATH }}/assets/images/Screenshot_20230111_151427.png)
 
 
 To enable MangoHud for all Steam games. You can either set `MANGOHUD=1` in `Environment` with flatseal. Or from Command.   
-![mangohud](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_151731.png)
+![mangohud]({{ BASE_PATH }}/assets/images/Screenshot_20230111_151731.png)
 
 
 command:  
@@ -125,7 +125,7 @@ Now change the **launch option** from 3 dot menu.
 Put `Command Argument` as `--prefer-launch --appname itch`
 
 Now run **itch** as usual. You can create Application Launcher shortcut of all of your launcher.  
-![qownnotes-media-KjSyau](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_155335.png)
+![qownnotes-media-KjSyau]({{ BASE_PATH }}/assets/images/Screenshot_20230111_155335.png)
 
 
 
