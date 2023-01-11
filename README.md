@@ -41,6 +41,21 @@ Fix space indent for code blocks: 3.
 Run Server: `bundle exec jekyll serve`  
 Admin: `http://localhost:4000/admin`  
 Post image ex: `![qownnotes-media-KjSyau]({{ BASE_PATH }}/assets/images/Screenshot_20230111_155335.png)`
+Dependencies:   
+ubuntu 22.04 
+```bash
+sudo apt-get install ruby-full build-essential zlib1g-dev 
+
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc  
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc  
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc  
+source ~/.bashrc
+
+gem install jekyll bundler  
+cd tazihad.github.io  
+bundle install  
+bundle exec jekyll serve  
+```
 
 ## License
 
