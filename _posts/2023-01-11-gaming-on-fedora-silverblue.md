@@ -111,7 +111,7 @@ Below in the `Options` tab. Go to `Dependencies`. And install some recommended d
 - gecko
 
 From the `Installed Programs...` option. Install `Blizzard Battle.net`, `EA Launcher`, `Origin`, `Ubisoft`. Install the Launcher you want.  That's it. Enjoy playing.  
- ![bottles programs](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_154423.png)
+ ![bottles programs]({{ BASE_PATH }}/assets/images/Screenshot_20230111_154423.png)
 
 
 To install **itch.io** inside the bottle. Make sure you [install Windows version](https://itch.io/app/download?platform=windows) of the client.  
