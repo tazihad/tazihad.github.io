@@ -49,15 +49,15 @@ flatpak install flathub com.valvesoftware.Steam
 ```
 
 Now use Flatseal to set permission to access folders or drive other than the default location.  Add location to `Other files`.  
-![flatseal permission](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_151006.png?raw=true)
+![flatseal permission](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_151006.png)
   
 
 Open Steam. From Settings enable `Enable Steam Play for supported titles`. And `Enable Steam Play for all other titles`. Use any version. from drop down. `Proton Experimental` is fine.  
-![steam play](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_151427.png?raw=true)
+![steam play](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_151427.png)
 
 
 To enable MangoHud for all Steam games. You can either set `MANGOHUD=1` in `Environment` with flatseal. Or from Command.   
-![mangohud](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_151731.png?raw=true)
+![mangohud](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_151731.png)
 
 
 command:  
@@ -111,7 +111,7 @@ Below in the `Options` tab. Go to `Dependencies`. And install some recommended d
 - gecko
 
 From the `Installed Programs...` option. Install `Blizzard Battle.net`, `EA Launcher`, `Origin`, `Ubisoft`. Install the Launcher you want.  That's it. Enjoy playing.  
- ![bottles programs](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_154423.png?raw=true)
+ ![bottles programs](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_154423.png)
 
 
 To install **itch.io** inside the bottle. Make sure you [install Windows version](https://itch.io/app/download?platform=windows) of the client.  
@@ -125,7 +125,7 @@ Now change the **launch option** from 3 dot menu.
 Put `Command Argument` as `--prefer-launch --appname itch`
 
 Now run **itch** as usual. You can create Application Launcher shortcut of all of your launcher.  
-![qownnotes-media-KjSyau](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_155335.png?raw=true)
+![qownnotes-media-KjSyau](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_155335.png)
 
 
 
