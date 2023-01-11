@@ -49,13 +49,16 @@ flatpak install flathub com.valvesoftware.Steam
 ```
 
 Now use Flatseal to set permission to access folders or drive other than the default location.  Add location to `Other files`.  
-<<Screenshot_20230111_151006.png>>  
+![flatseal permission](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_151006.png?raw=true)
+  
 
 Open Steam. From Settings enable `Enable Steam Play for supported titles`. And `Enable Steam Play for all other titles`. Use any version. from drop down. `Proton Experimental` is fine.  
-<<Screenshot_20230111_151427.png>>
+![steam play](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_151427.png?raw=true)
+
 
 To enable MangoHud for all Steam games. You can either set `MANGOHUD=1` in `Environment` with flatseal. Or from Command.   
-<<Screenshot_20230111_151731.png>>
+![mangohud](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_151731.png?raw=true)
+
 
 command:  
 ```bash
@@ -107,8 +110,9 @@ Below in the `Options` tab. Go to `Dependencies`. And install some recommended d
 - mono
 - gecko
 
-From the `Installed Programs...` option. Install `Blizzard Battle.net`, `EA Launcher`, `Origin`, `Ubisoft`. Install the Launcher you want.  That's it. Enjoy playing.
- <<Screenshot_20230111_154423.png>>
+From the `Installed Programs...` option. Install `Blizzard Battle.net`, `EA Launcher`, `Origin`, `Ubisoft`. Install the Launcher you want.  That's it. Enjoy playing.  
+ ![bottles programs](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_154423.png?raw=true)
+
 
 To install **itch.io** inside the bottle. Make sure you [install Windows version](https://itch.io/app/download?platform=windows) of the client.  
 
@@ -121,7 +125,8 @@ Now change the **launch option** from 3 dot menu.
 Put `Command Argument` as `--prefer-launch --appname itch`
 
 Now run **itch** as usual. You can create Application Launcher shortcut of all of your launcher.  
-<<Screenshot_20230111_155335.png>>
+![qownnotes-media-KjSyau](https://github.com/tazihad/tazihad.github.io/blob/main/assets/images/Screenshot_20230111_155335.png?raw=true)
+
 
 
 ### Waydroid / Android Games
