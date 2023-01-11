@@ -40,6 +40,7 @@ Editor [QOwnNotes](https://flathub.org/apps/details/org.qownnotes.QOwnNotes).
 Fix space indent for code blocks: 3.  
 Run Server: `bundle exec jekyll serve`  
 Admin: `http://localhost:4000/admin`
+Post image ex: `![qownnotes-media-KjSyau]({{ BASE_PATH }}/assets/images/Screenshot_20230111_155335.png)`
 
 ## License
 
