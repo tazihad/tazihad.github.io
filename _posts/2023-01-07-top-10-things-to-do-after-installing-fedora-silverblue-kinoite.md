@@ -5,7 +5,7 @@ categories:
 - silverblue
 ---
 
-![Silverblue Desktop](https://raw.githubusercontent.com/tazihad/tazihad.github.io/main/assets/images/Screenshot_20230107_184440.png)
+![Silverblue Desktop]({{ BASE_PATH }}/assets/images/Screenshot_20230107_184440.png)
 
 **1. Check system update and upgrades**
 
