@@ -132,3 +132,47 @@ Now run **itch** as usual. You can create Application Launcher shortcut of all o
 ### Waydroid / Android Games
 
 Do you want to play Android Games? Even though much complex games may not work. But Basic mouse based android games works smooth. You will need **wayland** for it. Check out our other turorial of Wayland Installation.
+
+## Gaming inside toolbox/distrobox.
+
+In this section we will install League of Legends inside distrobox.  
+
+### League of Legends in Silverblue  
+
+![League of Legends in Silverblue]({{ BASE_PATH }}/assets/images/Screenshot_20230114_221025.png)
+
+
+First, lets create a distrobox environment named `gaming`. Use any you wish.  
+
+```bash
+distrobox create --name gaming --image registry.fedoraproject.org/fedora-toolbox:37 --home /home/zihad/.var/distrobox/home/gaming
+```
+> Make sure you create a seperate home directory for your `gaming` environment. And replace your username.  
+
+```bash
+distrobox enter gaming
+```
+Install NVIDIA driver inside container if you have one.  
+```bash
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+```
+
+```bash
+sudo dnf update -y
+sudo dnf install akmod-nvidia
+```
+
+You have to reboot system probably.  
+
+Install Lutris:  
+```bash
+sudo dnf install lutris
+```
+
+export the lutris app to your hot.
+
+```bash
+distrobox-export --app lutris
+```
+
+Now use this lutris to install League of Legends as usual from Lutris.
