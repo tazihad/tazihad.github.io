@@ -29,14 +29,14 @@ If you using ubuntu container.
    ```bash
    distrobox enter --root linuxbrew
    sudo apt install build-essential
-   ```  
+   ``` 
 
    for fedora, centOS  container  
-    ```bash
-     distrobox enter --root linuxbrew  
-     sudo yum groupinstall 'Development Tools'
-     sudo yum install procps-ng curl file git perl openssl
-    ```  
+       ```bash
+      distrobox enter --root linuxbrew  
+      sudo yum groupinstall 'Development Tools'
+      sudo yum install procps-ng curl file git perl openssl
+      ```  
 5. Follow the Next steps instructions to add Linuxbrew to  your PATH of **host** system and to your **container** bash shell profile script, either `~/.profile` on Debian/Ubuntu or `~/.bash_profile` on CentOS/Fedora/RedHat. The best place is to put it in `~/.bashrc`.  
    ```bash
    eval $(/var/home/linuxbrew/.linuxbrew/bin/brew shellenv)
@@ -44,7 +44,7 @@ If you using ubuntu container.
 6. Now install any application which will be available in host os.  
 Make sure you install package from **inside** linuxbrew distrobox container. But those packages will be available from host. Example trying installing `neofetch`. Now you can access `neofetch` binary from host os. 
    ```bash
-   distrobox enter linuxbrew
+   distrobox enter --root linuxbrew
    brew install neofetch
    ```
    
