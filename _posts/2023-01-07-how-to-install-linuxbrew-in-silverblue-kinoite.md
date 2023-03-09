@@ -5,11 +5,6 @@ categories:
 - silverblue
 ---
 
-How to install Brew / LinuxBrew in Fedora Silverblue & Kinoite
-========================
-
-
-
 Prerequisite: **Distrobox**    
 
 `rpm-ostree install distrobox`
@@ -34,16 +29,14 @@ If you using ubuntu container.
    ```bash
    distrobox enter --root linuxbrew
    sudo apt install build-essential
-   ```
+   ```  
 
-   for fedora, centOS  container
-       ```bash
-      distrobox enter --root linuxbrew  
-      sudo yum groupinstall 'Development Tools'
-      sudo yum install procps-ng curl file git perl openssl
-      ```
-      
-          
+   for fedora, centOS  container  
+    ```bash
+     distrobox enter --root linuxbrew  
+     sudo yum groupinstall 'Development Tools'
+     sudo yum install procps-ng curl file git perl openssl
+    ```  
 5. Follow the Next steps instructions to add Linuxbrew to  your PATH of **host** system and to your **container** bash shell profile script, either `~/.profile` on Debian/Ubuntu or `~/.bash_profile` on CentOS/Fedora/RedHat. The best place is to put it in `~/.bashrc`.  
    ```bash
    eval $(/var/home/linuxbrew/.linuxbrew/bin/brew shellenv)
