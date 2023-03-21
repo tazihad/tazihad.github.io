@@ -94,7 +94,7 @@ You can create this file as `touch RCLONE_TEST` from terminal.
    ```
    Now use the following command:  
    ```
-   rclone bisync "google-drive:/" "/home/zihad/mydrive/" --check-access --fast-list --drive-skip-shortcuts --drive-acknowledge-abuse --drive-skip-gdocs --drive-skip-dangling-shortcuts --verbose --resync
+   rclone bisync "remote:/" "/home/zihad/mydrive/" --check-access --fast-list --drive-skip-shortcuts --drive-acknowledge-abuse --drive-skip-gdocs --drive-skip-dangling-shortcuts --verbose --resync
    ```  
    Note that we are skipping `Google docs`. Because `rclone` has yet to resolve the [issue](https://github.com/rclone/rclone/issues/5696).   
     If everything was correct you will see your google drive content in the `mydrive` directory.  Change to your username.  
