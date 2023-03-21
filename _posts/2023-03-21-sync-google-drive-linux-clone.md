@@ -124,7 +124,7 @@ You can create this file as `touch RCLONE_TEST` from terminal.
    Description=sync google drive with rclone every 5 minutes.
    
    [Service]
-   ExecStart=rclone bisync "google-drive:/" "/home/zihad/mydrive/" --check-access --fast-list --drive-skip-shortcuts --drive-acknowledge-abuse --drive-skip-gdocs --drive-skip-dangling-shortcuts
+   ExecStart=rclone bisync "remote:/" "/home/zihad/mydrive/" --check-access --fast-list --drive-skip-shortcuts --drive-acknowledge-abuse --drive-skip-gdocs --drive-skip-dangling-shortcuts
    ```
    
    Let's enable the service from command line.
