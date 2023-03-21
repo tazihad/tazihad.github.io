@@ -52,6 +52,7 @@ echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
 gem install jekyll bundler  
+git clone https://github.com/tazihad/tazihad.github.io.git  
 cd tazihad.github.io  
 bundle install  
 bundle exec jekyll serve  
