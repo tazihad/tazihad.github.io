@@ -1,5 +1,6 @@
 ---
 title: Sync Google Drive in Linux using rclone
+tags: [google-drive]
 ---
 
 Google Drive doesn't have any official linux client. Over the years many unofficial method was used to integrate google drive in linux. Mounting as file system or KDE and Gnome's Google Drive mount. But none of them sync like official client in windows. What we want is two way sync.  

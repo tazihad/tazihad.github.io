@@ -2,6 +2,7 @@
 title: Kill all WINE process in linux
 categories:
 - linux
+tags: [wine]
 ---
 
 If your system has lots of orphan WINE process. Use this script to kill all of them.  

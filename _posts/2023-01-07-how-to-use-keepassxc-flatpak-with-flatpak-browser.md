@@ -2,6 +2,7 @@
 title: How to Use flatpak KeepassXC with flatpak Firefox or Chromium based browser.
 categories:
 - linux
+tags: [linux,flatpak,keepassxc]
 ---
 
 At the moment January 2023. Flatpak Keepassxc doesn't connect with Flatpak Firefox or other chromium based browsers. But we will use some tricks to fix this issue.  

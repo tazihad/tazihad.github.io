@@ -3,6 +3,7 @@ title: Setup Gaming Environment for Fedora Silverblue & Kinoite
 categories:
 - linux
 - silverblue
+tags: [linux,silverblue,kinoite,gaming]
 ---
 
 This guide should be applicable for both Fedora Silverblue and Fedora Kinoite.  

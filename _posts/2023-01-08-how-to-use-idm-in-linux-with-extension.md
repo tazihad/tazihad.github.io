@@ -2,6 +2,7 @@
 title: How to use IDM in linux with extension support
 categories:
 - linux
+tags: [wine]
 ---
 
 Prerequisite: [Flatpak](https://flatpak.org/setup/).  
