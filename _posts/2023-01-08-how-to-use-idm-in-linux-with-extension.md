@@ -2,7 +2,8 @@
 title: How to use IDM in linux with extension support
 categories:
 - linux
-tags: [wine]
+tags:
+- wine
 ---
 
 Prerequisite: [Flatpak](https://flatpak.org/setup/).  
@@ -12,13 +13,13 @@ Install WINE using Flatpak.
 flatpak install flathub org.winehq.Wine
 ```
 
-Create a 32-Bit WINEPREFIX named `IDM` using flatpak winetricks. Install IDM in default location.  
+Create a 64-Bit WINEPREFIX named `IDM` using flatpak winetricks. Install IDM in default location.  
 
 ```bash
 flatpak run --command=winetricks org.winehq.Wine
 ```
 
-put below script as `idm` in `~/.local/bin/`.  
+put below script as `idm` in `~/.local/bin/idm`.  
 Make it executable. `chmod +x ~/.local/bin/idm`  
 > Change username and home location inside it.  `/var/home/` for silverblue. For regular distro it's `/home`.  
 
@@ -26,15 +27,15 @@ Make it executable. `chmod +x ~/.local/bin/idm`
 #!/bin/bash
 
 if  [[ $1 == '-d' ]]; then
-   flatpak run --env="WINEPREFIX=/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/" org.winehq.Wine "/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/drive_c/Program Files/Internet Download Manager/IDMan.exe" /d "$2"
+   flatpak run --env="WINEPREFIX=/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/" org.winehq.Wine "/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/drive_c/Program Files (x86)/Internet Download Manager/IDMan.exe" /d "$2"
 elif [[ $1 == *://* ]]; then
-  flatpak run --env="WINEPREFIX=/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/" org.winehq.Wine "/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/drive_c/Program Files/Internet Download Manager/IDMan.exe" /d "$1"
+  flatpak run --env="WINEPREFIX=/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/" org.winehq.Wine "/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/drive_c/Program Files (x86)/Internet Download Manager/IDMan.exe" /d "$1"
 else
   echo "Usage: idm [URL] or idm -d [URL]"
 fi
 ```
 
-put `idm.png` icon in `~/.local/share/icons`.  
+put `idm.png` icon in `~/.local/share/icons`. Or directly link idm icon.   
 [idm.png source](https://github.com/tazihad/idm-linux)
 
 create application launcher in `~/.local/share/applications`.
@@ -44,11 +45,11 @@ create application launcher in `~/.local/share/applications`.
 ```desktop
 [Desktop Entry]
 Name=Internet Download Manager
-Exec=flatpak run --env="WINEPREFIX=/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/" org.winehq.Wine "/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/drive_c/Program Files/Internet Download Manager/IDMan.exe" @@u %U @@
+Exec=flatpak run --env="WINEPREFIX=/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/" org.winehq.Wine "/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/drive_c/Program Files (x86)/Internet Download Manager/IDMan.exe" @@u %U @@
 Type=Application
 Terminal=false
 Categories=Internet;
-Icon=idm.png
+Icon=/home/zihad/.var/app/org.winehq.Wine/data/icons/hicolor/48x48/apps/2829_IDMan.0.png
 Comment=Launch Internet Download Manager.
 StartupWMClass=Internet Download Manager
 ```  
