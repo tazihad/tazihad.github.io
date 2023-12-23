@@ -1,6 +1,7 @@
 ---
 title: Sync Google Drive in Linux using rclone
-tags: [google-drive]
+tags:
+- google-drive
 ---
 
 Google Drive doesn't have any official linux client. Over the years many unofficial method was used to integrate google drive in linux. Mounting as file system or KDE and Gnome's Google Drive mount. But none of them sync like official client in windows. What we want is two way sync.  
@@ -22,7 +23,7 @@ Here is an example of how to make a remote called `remote`. First run:
    r) Rename remote
    c) Copy remote
    s) Set configuration password
-   q) Quit config
+   q) Quit config12/24/23
    n/r/c/s/q> n
    name> remote
    Type of storage to configure.
@@ -87,8 +88,8 @@ Here is an example of how to make a remote called `remote`. First run:
    ```
 
 
-2. Then we will create a test file called `RCLONE_TEST`. We will put this file in google drive `root` directory  using a browser to check access. This is a `rclone` feature for safety measure.  
-You can create this file as `touch RCLONE_TEST` from terminal.  
+2. Then we will create a test file called `RCLONE_TEST`. We will put this file in google drive `root` directory and as well as our local directory where we are going to sync.  We are doing this check access. This is a `rclone` feature for safety measure.  
+You can create this file as `touch RCLONE_TEST` from terminal. Copy this file to our root directory of Google Drive and the local directory. Ex: `~/google-drive/RCLONE_TEST`  
 3. Next we will sync our drive in a local folder. Let's create a `mydrive` folder in our home directory.  
    ```
    mkdir -p ~/mydrive
