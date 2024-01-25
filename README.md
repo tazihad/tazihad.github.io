@@ -24,26 +24,46 @@ Jekyll site. The following is a list of targets:
 
 To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
 latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
-
 ## Prerequisites
 
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of
-the basic environment. [Git](https://git-scm.com/) also needs to be installed.
+Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of `Ruby`, `RubyGems`, `Jekyll` and `Bundler`.
 
 ## Installation
 
-Sign in to GitHub and [**use this template**][use-template] to generate a brand new repository and name it
-`USERNAME.github.io`, where `USERNAME` represents your GitHub username.
+[**Use this template**][use-template] to generate a brand new repository and name it `<GH_USERNAME>.github.io`, where `GH_USERNAME` represents your GitHub username.
 
 Then clone it to your local machine and run:
 
-```console
+```
 $ bundle
 ```
 
 ## Usage
 
 Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#documentation).
+
+## Extra
+Editor [QOwnNotes](https://flathub.org/apps/details/org.qownnotes.QOwnNotes).
+Fix space indent for code blocks: 3.
+Run Server: `bundle exec jekyll serve`
+Admin: `http://localhost:4000/admin`
+Post image ex: `![qownnotes-media-KjSyau]({{ BASE_PATH }}/assets/images/Screenshot_20230111_155335.png)`
+Dependencies:
+ubuntu 22.04
+```bash
+sudo apt-get install ruby-full build-essential zlib1g-dev
+
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+gem install jekyll bundler
+git clone https://github.com/tazihad/tazihad.github.io.git
+cd tazihad.github.io
+bundle install
+bundle exec jekyll serve
+```
 
 ## License
 
