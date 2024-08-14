@@ -1,0 +1,24 @@
+{
+    "name": "tazihad.github.io devcontainer",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "streetsidesoftware.code-spell-checker"
+            ]
+        }
+    },
+    "runArgs": [
+        "--userns=keep-id"
+    ],
+    "containerUser": "vscode",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,Z",
+    "workspaceFolder": "/workspace"
+}
+
+// sudo gem install jekyll bundler
+// sudo bundle install
+// bundle exec jekyll serve
