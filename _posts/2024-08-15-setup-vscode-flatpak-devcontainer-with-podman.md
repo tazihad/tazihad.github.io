@@ -3,7 +3,10 @@ title: Setup Devcontainer in VSCode Flatpak with Podman
 categories:
 - linux
 tags:
-- vscode, docker, podman, flatpak
+- vscode
+- docker
+- podman
+- flatpak
 ---
 
 Want to use DevContainers with VS Code Flatpak and Podman?
