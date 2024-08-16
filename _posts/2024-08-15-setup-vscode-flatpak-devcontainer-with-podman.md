@@ -12,6 +12,11 @@ tags:
 - flatpak
 ---
 
+> vscode + flatpak + devcontainer + podman
+{: .prompt-tip }
+
+
+
 Want to use DevContainers with VS Code Flatpak and Podman?
  It's not as straightforward as it sounds. Flatpak's sandboxing and Podman's socket access pose challenges. This post will guide you through the hurdles, offering solutions and workarounds to get your DevContainer up and running smoothly. We'll cover essential configurations, troubleshooting tips, and best practices to make your development experience as painless as possible.
 
