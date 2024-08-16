@@ -14,12 +14,12 @@ timezone: Asia/Dhaka
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Computing Adventures with Zihad                          # the main title
+title: "Comprehensive Tech Programming Tutorials: Linux, Machine Learning and More"  # the main title
 
-tagline: programming, engineering, system   # it will display as the sub-title
+tagline: "Programming, System Engineering, and DevOps Insights"   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Adventures with Zihad. Machine Learning, Linux, Systems.
+  "Explore in-depth tutorials on programming, machine learning, systems engineering, DevOps, and Linux. Stay updated with the latest tech insights and practical guides for developers and engineers."
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -44,13 +44,19 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # fill in to your verification string
+# Site Verification Settings
+webmaster_verifications:
+  google: # fill in your Google verification code
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-google_analytics:
-  id: 'G-QTJKQ3VSQQ'                # fill in your Google Analytics ID
+# Web Analytics Settings
+analytics:
+  google:
+    id: 'G-QTJKQ3VSQQ'                # fill in your Google Analytics ID
+  cloudflare:
+    id: # fill in your Cloudflare Web Analytics token    
 
 # Prefer color scheme setting.
 #
@@ -70,7 +76,7 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+cdn:
 
 # the avatar on sidebar, support local or CORS resources
 avatar: https://avatars.githubusercontent.com/u/19417232
@@ -83,7 +89,7 @@ social_preview_image: # string, local or CORS resources
 toc: true
 
 comments:
-  active: giscus         # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  provider: giscus         # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -112,6 +118,12 @@ assets:
 
 pwa:
   enabled: true # the option for PWA feature
+  # Paths defined here will be excluded from the PWA cache.
+  # Usually its value is the `baseurl` of another website that
+  # shares the same domain name as the current website.
+  deny_paths:
+  # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+
 
 paginate: 10
 

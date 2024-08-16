@@ -1,5 +1,8 @@
 ---
-title: Setup Devcontainer in VSCode Flatpak with Podman
+layout: post
+title: "Setup Devcontainer in VSCode Flatpak with Podman"
+date: 2024-08-15 04:45 +0600
+description: "Set up a Devcontainer in VSCode using Flatpak and Podman for a seamless development experience."
 categories:
 - linux
 tags:
