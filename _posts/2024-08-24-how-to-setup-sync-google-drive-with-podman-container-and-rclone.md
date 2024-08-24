@@ -39,7 +39,7 @@ podman run --rm --interactive --net=host \
   --name rclone-config-interactive \
   -v ~/sync/rclone-config:/config/rclone:Z \
   -v ~/sync/rclone-cache:/root/.cache/rclone:Z \
-  -v ~/sync/gdrive/:/data:Z \
+  -v ~/sync/gdrive/:/gdrive:Z \
   rclone/rclone:latest config
     ```
 > **Note:** We used :Z at the end because of SELINUX. If you face error in debian, ubuntu or Arch based installation try removing `:Z`.
