@@ -34,14 +34,14 @@ mkdir -p ~/sync/rclone-cache
     ```
 
 3. Now let's setup up rclone. Connect rclone with Google Drive and fill our rclone-config.
-    ```bash
+```bash
 podman run --rm --interactive --net=host \
-  --name rclone-config-interactive \
+  --name rclone-bisync \
   -v ~/sync/rclone-config:/config/rclone:Z \
   -v ~/sync/rclone-cache:/root/.cache/rclone:Z \
-  -v ~/sync/gdrive/:/gdrive:Z \
+  -v ~/sync/gdrive/:/data/gdrive:Z \
   rclone/rclone:latest config
-    ```
+```
 > **Note:** We used :Z at the end because of SELINUX. If you face error in debian, ubuntu or Arch based installation try removing `:Z`.
 
     Above command should open rclone setup panel. Now go ahead connect with Google Drive. We are going to use **my-gdrive-remote** as remote name for our google drive.
@@ -57,8 +57,8 @@ touch ~/sync/gdrive/RCLONE_TEST
 podman run --rm --name rclone-bisync \
   -v ~/sync/rclone-config:/config/rclone:Z \
   -v ~/sync/rclone-cache:/root/.cache/rclone:Z \
-  -v ~/sync/gdrive:/gdrive:Z \
-  rclone/rclone:latest bisync "my-gdrive-remote:/" "/gdrive" \
+  -v ~/sync/gdrive:/data/gdrive:Z \
+  rclone/rclone:latest bisync "my-gdrive-remote:/" "/data/gdrive" \
   --create-empty-src-dirs \
   --compare size,modtime,checksum \
   --fix-case \
@@ -78,8 +78,8 @@ You shoulde see **INFO  : Bisync successful**.
 podman run --rm --name rclone-bisync \
   -v ~/sync/rclone-config:/config/rclone:Z \
   -v ~/sync/rclone-cache:/root/.cache/rclone:Z \
-  -v ~/sync/gdrive:/gdrive:Z \
-  rclone/rclone:latest bisync "my-gdrive-remote:/" "/gdrive" \
+  -v ~/sync/gdrive:/data/gdrive:Z \
+  rclone/rclone:latest bisync "my-gdrive-remote:/" "/data/gdrive" \
   --create-empty-src-dirs \
   --compare size,modtime,checksum \
   --fix-case \
@@ -98,8 +98,8 @@ podman run --rm --name rclone-bisync \
 podman run --rm --name rclone-bisync \
   -v ~/sync/rclone-config:/config/rclone:Z \
   -v ~/sync/rclone-cache:/root/.cache/rclone:Z \
-  -v ~/sync/gdrive:/gdrive:Z \
-  rclone/rclone:latest bisync "my-gdrive-remote:/" "/gdrive" \
+  -v ~/sync/gdrive:/data/gdrive:Z \
+  rclone/rclone:latest bisync "my-gdrive-remote:/" "/data/gdrive" \
   --create-empty-src-dirs \
   --compare size,modtime,checksum \
   --fix-case \
@@ -130,8 +130,8 @@ put the following in file. Use your favourite text editor.
    AutoUpdate=registry
    Volume=%h/sync/rclone-config:/config/rclone:Z
    Volume=%h/sync/rclone-cache:/root/.cache/rclone:Z
-   Volume=%h/sync/gdrive/:/gdrive:Z
-   Exec=bisync "my-gdrive-remote:/" "/gdrive" \
+   Volume=%h/sync/gdrive/:/data/gdrive:Z
+   Exec=bisync "my-gdrive-remote:/" "/data/gdrive" \
    --log-level ERROR \
    --log-file /root/.cache/rclone/rclone.log \
    --create-empty-src-dirs \
@@ -181,3 +181,4 @@ put this in the timer config.
     ```
 
 That's it. Now Google Drive is in sync with our Local Folder. You can do the same for One Drive or other cloud service that is supported by rclone. Modify the commands accordingly.
+You can check what all the flags do at [rclone bisync](https://rclone.org/bisync/).
