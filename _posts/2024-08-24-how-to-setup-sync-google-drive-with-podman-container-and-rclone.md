@@ -51,6 +51,15 @@ podman run --rm --interactive --net=host \
     ```bash
 touch ~/sync/gdrive/RCLONE_TEST
     ```
+And create empty RCLONE_TEST file in google drive.
+    ```bash
+podman run --rm --net=host \
+--name rclone-bisync \
+-v ~/sync/rclone-config:/config/rclone:Z \
+-v ~/sync/rclone-cache:/root/.cache/rclone:Z \
+-v ~/sync/gdrive/:/data/gdrive:Z \
+rclone/rclone:latest touch my-gdrive-remote:RCLONE_TEST
+    ```
 
 5. Now we are going to **dry-run** our google drive sync. It is just a test to find out if everything is working.  
 ```bash
