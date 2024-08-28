@@ -31,6 +31,9 @@ curl -sSL https://raw.githubusercontent.com/tazihad/bangla-font-fix-linux/main/b
 ```bash
 curl -sSL https://raw.githubusercontent.com/tazihad/bangla-font-fix-linux/main/msfonts-download.sh | sh
 ```
+ 
+**Logout from session and Login again to see font change.**
+
 
 Although Google Chrome has better font rendering for Bangla language. But Firefox is often not good. Let's change the default fonts for better readability.
 
