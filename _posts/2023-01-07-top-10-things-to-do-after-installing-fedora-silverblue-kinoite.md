@@ -6,7 +6,7 @@ categories:
 tags: [linux,silverblue,kinoite,fedora]
 ---
 
-![Silverblue Desktop]({{ BASE_PATH }}/assets/images/Screenshot_20230107_184440.png)
+![Silverblue Desktop]({{ BASE_PATH }}/assets/images/2023-01-07-top-10-things-to-do-after-installing-fedora-silverblue-kinoite/Screenshot_20230107_184440.png)
 
 **1. Check system update and upgrades**
 

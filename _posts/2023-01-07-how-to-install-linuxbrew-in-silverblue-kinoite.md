@@ -1,8 +1,6 @@
 ---
 title: How to install Brew / LinuxBrew in Fedora Silverblue & Kinoite
-categories:
-- linux
-- silverblue
+categories: [linux, silverblue]
 tags: [linux,silverblue,kinoite,linuxbrew]
 ---
 

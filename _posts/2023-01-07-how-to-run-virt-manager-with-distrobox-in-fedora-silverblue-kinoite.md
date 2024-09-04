@@ -53,4 +53,4 @@ NIC -> Virtual Network Interface -> Network Source.
 Change to Macvtap device...
 set device name: eg- `enp4s0f1`
 
-![Macvtap]({{ BASE_PATH }}/assets/images/Screenshot_20230108_000536.png)
+![Macvtap]({{ BASE_PATH }}/assets/images/2023-01-07-how-to-run-virt-manager-with-distrobox-in-fedora-silverblue-kinoite/Screenshot_20230108_000536.png)
