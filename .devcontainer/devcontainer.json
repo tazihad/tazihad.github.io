@@ -5,9 +5,14 @@
     },
     "customizations": {
         "vscode": {
-            "settings": {},
+            "settings": {
+                "markdown.copyFiles.destination": {
+                    "_posts/**": "/assets/images/${documentBaseName}/${fileName}"
+                }
+            },
             "extensions": [
-                "streetsidesoftware.code-spell-checker"
+                "starkwang.markdown",
+                "rohgarg.jekyll-post"
             ]
         }
     },
@@ -19,6 +24,13 @@
     "workspaceFolder": "/workspace"
 }
 
+// build:
 // sudo gem install jekyll bundler
 // sudo bundle install
 // bundle exec jekyll serve
+
+// change settings:
+// markdown.copyFiles.destination
+// item: _posts/**
+// value: /assets/images/${documentBaseName}/${fileName}
+//
