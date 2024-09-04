@@ -8,7 +8,6 @@ image:
   alt: League of legends poster
 ---
 
-
 League of Legends can be played on linux in several ways. Lutris is one of them. But my favourite one is Bottles. Because I play all of my other games using Bottles. Bottles also has better UI than Lutris. It's my personal preference.  
 
 Requirements:  

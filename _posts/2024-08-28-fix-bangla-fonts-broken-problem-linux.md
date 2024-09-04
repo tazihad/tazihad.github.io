@@ -8,7 +8,6 @@ categories:
 tags:
 - font
 - bangla-font
-author:
 ---
 
 If you have broken or boxed bangla fonts problem. Or you see small bangla fonts. You can fix it by following the commands.
