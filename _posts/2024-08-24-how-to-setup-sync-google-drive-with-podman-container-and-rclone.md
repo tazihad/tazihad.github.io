@@ -130,16 +130,12 @@ nano ~/.config/containers/systemd/rclone-bisync.container
     ```
 put the following in file. Use your favourite text editor.
     ```
-   [Unit]
-   Description=rclone bisync container
-
    [Container]
    Image=docker.io/rclone/rclone:latest
-   ContainerName=rclone-bisync
+
    AutoUpdate=registry
-   Volume=%h/sync/rclone-config:/config/rclone:Z
-   Volume=%h/sync/rclone-cache:/root/.cache/rclone:Z
-   Volume=%h/sync/gdrive/:/data/gdrive:Z
+   ContainerName=rclone-bisync
+
    Exec=bisync "my-gdrive-remote:/" "/data/gdrive" \
    --log-level ERROR \
    --log-file /root/.cache/rclone/rclone.log \
@@ -153,6 +149,15 @@ put the following in file. Use your favourite text editor.
    --resilient \
    --max-lock 2m \
    --recover
+
+   SecurityLabelDisable=true
+   Volume=%h/sync/rclone-config:/config/rclone
+   Volume=%h/sync/rclone-cache:/root/.cache/rclone
+   Volume=%h/sync/gdrive/:/data/gdrive
+
+   [Service]
+   TimeoutStartSec=900
+   Restart=always
 
    [Install]
    WantedBy=default.target

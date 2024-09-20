@@ -24,7 +24,7 @@ Prerequisites: `podman`, `flatpak`
 
 - Install flatpak vscode and podman
 ```sh
-flatpak install --user -y \
+flatpak install -y \
   com.visualstudio.code \
   com.visualstudio.code.tool.podman
 ```
@@ -51,7 +51,7 @@ curl -w "\n" \
 You should see OK if everything is alright.
 - install [devcontainers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
 ```sh
-flatpak run --user --command=sh com.visualstudio.code -c \
+flatpak run --command=sh com.visualstudio.code -c \
   "/app/extra/vscode/bin/code --install-extension ms-vscode-remote.remote-containers"
 ```
 - We need to replace docker with podman (podman-remote that connect with host podman). We can do that by opening vscode and go to user setting `ctrl + ,`. and search for `dev.containers.dockerPath` change the setting from `docker` to `/app/tools/podman/bin/podman/podman-remote`
@@ -68,7 +68,7 @@ and put the setting
 ```
 - Test if vscode flatpak is connected and working with podman (optional)
 ```sh
-flatpak run --user --command=sh com.visualstudio.code
+flatpak run --command=sh com.visualstudio.code
 /app/tools/podman/bin/podman-remote version
 /app/tools/podman/bin/podman-remote run --rm hello-world
 ```
