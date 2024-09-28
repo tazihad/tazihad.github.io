@@ -7,9 +7,8 @@ categories:
 
 It's better we create a seperate home folder for our new distrobox.  
 ```bash
-distrobox create --root --image quay.io/toolbx-images/ubuntu-toolbox:22.04 --name ubuntu-virt-manager --home /home/zihad/.var/distrobox/home/ubuntu-virt-manager --init
+distrobox create --root --image quay.io/toolbx/ubuntu-toolbox:20.04 --name ubuntu-virt-manager --home ~/.var/distrobox/ubuntu-virt-manager --init
 ```
-> Change your username.
 
 Enter distrobox with root.  
 ```bash
@@ -21,19 +20,20 @@ sudo apt update && sudo apt upgrade
 ```
 Install `virt-manager`.
 ```bash
-sudo apt install virt-manager
+sudo apt install -y virt-manager
+```
+
+add your username to to libvirt group.
+```bash
+sudo usermod -aG libvirt $USER
 ```
 
 update `libvirtd.service`
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl restart libvirtd.service
-sudo systemctl status libvirtd.service
 ```
-add your username to to libvirt group.
-```bash
-sudo usermod -a -G libvirt YOUR_USERNAME
-```
+
 Check Status.  
 ```bash
 cat /etc/group | grep libvirt
