@@ -14,15 +14,15 @@ Run Server: `bundle exec jekyll serve`
 Post image example: `![qownnotes-media-KjSyau]({{ BASE_PATH }}/assets/images/Screenshot_20230111_155335.png)`  
 Dependencies:  
 ```bash
-sudo apt-get install ruby-full build-essential zlib1g-dev # ubuntu 22-04
-sudo dnf install -y ruby ruby-devel && sudo dnf groupinstall -y "Development Tools" # fedora
+sudo apt-get install ruby-full build-essential zlib1g-dev ruby-bundler # ubuntu 22-04
+sudo dnf install -y ruby ruby-devel rubygem-bundler && sudo dnf groupinstall -y "Development Tools" # fedora
 
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
-gem install jekyll bundler
+# gem install jekyll bundler
 git clone https://github.com/tazihad/tazihad.github.io.git
 cd tazihad.github.io
 bundle install
