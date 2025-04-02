@@ -222,3 +222,7 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# adsense site verification
+include:
+  - ads.txt
