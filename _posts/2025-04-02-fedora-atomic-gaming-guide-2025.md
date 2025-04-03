@@ -29,7 +29,7 @@ Make sure you have added flathub as remote.
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-# Steam
+## Steam
 
 Steam is straight forward. Valve support of linux is first class. We just need to install steam. 
 
@@ -55,7 +55,7 @@ Now you will see all library are available on steam.
 
 ![protondb](<../assets/images/2025-04-02-2025-04-02-fedora-atomic-gaming-guide-2025/Screenshot 2025-04-03 at 11-16-22 ProtonDB Gaming know-how from the Linux and Steam Deck community.png>)
 
-# Heroic Games Launcher
+## Heroic Games Launcher
 
 Epic Games doesn't support linux. But it can be playable through Heroic Luncher. It will bring all your Epic games as well as GOG gameslibrary in your system.
 
@@ -69,7 +69,7 @@ Heroic Launcher is straight forward. Login to Epic or GOG. Than install:
 
 ![epic games](../assets/images/2025-04-02-2025-04-02-fedora-atomic-gaming-guide-2025/Screenshot_20250403_121557.png)
 
-# Lutris
+## Lutris
 
 Lutris is another laucnher that can run windows games on linux. It is also good launcher to run any copy of games you own. You can setup manually.
 
@@ -81,7 +81,7 @@ flatpak install flathub net.lutris.Lutris
 
 ![lutris](../assets/images/2025-04-02-2025-04-02-fedora-atomic-gaming-guide-2025/Screenshot_20250403_113633.png)
 
-# Bottles
+## Bottles
 
 Bottles is another launcher. Though it's better to use this if you have a game copy. This laucnher needs more manual control. If you have problem with any games that doesn't work on laucnher above you can use this to mannaly tinker and run games.
 
@@ -99,7 +99,7 @@ Bottle Installers. Now Install Program you want.
 
 ![bottle installers](../assets/images/2025-04-02-2025-04-02-fedora-atomic-gaming-guide-2025/Screenshot_20250403_120508.png)
 
-# Mangohud
+### Mangohud
 
 Mangohud is a nice gaming tools that show you stats of your pc.
 
