@@ -1,5 +1,5 @@
 # Use the official Ubuntu 20.04 as the base image
-FROM mcr.microsoft.com/vscode/devcontainers/base:0-ubuntu-22.04
+FROM mcr.microsoft.com/devcontainers/base:bookworm
 
 # Install any additional dependencies here
 RUN apt-get update && apt-get install -y \
