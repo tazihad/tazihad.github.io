@@ -9,5 +9,11 @@ RUN apt-get update && apt-get install -y \
     zlib1g-dev
 
 
+# Set environment variables for Ruby Gems (applies to all users/shells)
+ENV GEM_HOME="/home/vscode/gems"
+ENV PATH="$GEM_HOME/bin:$PATH"
+
+# Ensure the GEM_HOME directory exists and owned by the right user
+RUN mkdir -p /home/vscode/gems && chown -R vscode:vscode /home/vscode/gems
 
 
