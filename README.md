@@ -29,6 +29,12 @@ bundle install
 bundle exec jekyll serve
 ```
 
+Generate icons: 
+1. [Favicon Generator](https://www.favicon-generator.org/)
+2. [Real Favicon Generator](https://realfavicongenerator.net/)
+3. [Iconifier](https://iconifier.net/)
+
+
 ## License
 
 This work is published under [MIT][mit] License.
