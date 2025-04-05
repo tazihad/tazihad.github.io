@@ -20,9 +20,9 @@ At the moment January 2023. Flatpak Keepassxc doesn't connect with Flatpak Firef
 
 2. Created a wrapper script that will launch the official keepassxc-proxy from KeePassXC flatpak, at a path accessible by the Firefox flatpak, e.g.   
 
-	`mkdir -p ~/.var/app/org.mozilla.firefox/.local/bin/`  
+	`mkdir -p ~/.var/app/org.mozilla.firefox/data/bin/`  
 	
-	`nano ~/.var/app/org.mozilla.firefox/.local/bin/keepassxc-proxy-wrapper.sh`   
+	`nano ~/.var/app/org.mozilla.firefox/data/bin/keepassxc-proxy-wrapper.sh`   
 
    ```bash
    #!/bin/bash
@@ -50,7 +50,7 @@ At the moment January 2023. Flatpak Keepassxc doesn't connect with Flatpak Firef
    ```
 
     
-   `chmod +x ~/.var/app/org.mozilla.firefox/.local/bin/keepassxc-proxy-wrapper.sh`  
+   `chmod +x ~/.var/app/org.mozilla.firefox/data/bin/keepassxc-proxy-wrapper.sh`  
 
 3. Put the native messaging host json manifest to a the path where flatpaked Firefox will look for it, e.g.   
     `mkdir -p ~/.var/app/org.mozilla.firefox/.mozilla/native-messaging-hosts`
