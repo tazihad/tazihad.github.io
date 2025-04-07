@@ -14,9 +14,9 @@ timezone: Asia/Dhaka
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: "Comprehensive Tech Programming Tutorials: Linux, Machine Learning and More"  # the main title
+title: "Zihad Labs"  # the main title
 
-tagline: "Programming, System Engineering, and DevOps Insights"   # it will display as the sub-title
+tagline: "Comprehensive Tech Programming Tutorials: Linux, Machine Learning and More"   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   "Explore in-depth tutorials on programming, machine learning, systems engineering, DevOps, and Linux. Stay updated with the latest tech insights and practical guides for developers and engineers."
@@ -168,6 +168,9 @@ collections:
   tabs:
     output: true
     sort_by: order
+  pages:    #custom
+    output: true
+    sort_by: order  
 
 defaults:
   - scope:
