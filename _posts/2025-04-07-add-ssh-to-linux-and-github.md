@@ -15,6 +15,7 @@ Let's start. Make sure you are logged in to your github account in your browser.
 ```
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
+Keep password empty so that don't have to use password each time use ssh.
 
 2. Start the SSH agent: 
 ```
