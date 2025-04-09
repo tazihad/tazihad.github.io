@@ -1,5 +1,5 @@
 ---
-title: Deep Learning Basics with Pytorch
+title: Deep Learning Basics with Pytorch - Part 1
 description: Part 1 of Deep Learning Basics with Pytorch using JupyterLab
 date: 2025-04-08 16:33:00 +0600
 categories: [deep-learning]
@@ -45,6 +45,11 @@ conda install -c conda-forge notebook -y
 ```
 > conda-forge is community driven channel. notebook just contain basic jupyterlab. install jupyterlab for full package.
 
+If you are on NVIDIA and have CUDA installed.
+```bash
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+```
+
 run it.
 ```sh
 jupyter notebook
@@ -58,6 +63,7 @@ Install pytorch and other libraries.
 ```sh
 !pip install torch numpy
 ```
+
 Next import torch
 ```python
 import torch

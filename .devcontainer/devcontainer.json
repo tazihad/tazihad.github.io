@@ -22,7 +22,7 @@
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,Z",
     "workspaceFolder": "/workspace",
     "postCreateCommand": "bundle install",
-    "postStartCommand": "bundle exec jekyll serve --host 0.0.0.0",
+    "postStartCommand": "bundle exec jekyll serve --host 0.0.0.0 --drafts --unpublished --future --livereload --incremental",
     "forwardPorts": [4000]
 }
 
