@@ -1,9 +1,9 @@
 ---
-title: Technology post
-description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
-date: 2025-08-28 16:33:00 +0600
-categories: [linux]
-tags: [drafts, many]
+title: Math latex test
+description: Learn how to set up TensorFlow and PyTorch with CUDA for GPU-accelerated machine learning and deep learning on your system.
+date: 2025-04-08 12:33:00 +0600
+categories: [deep-learning]
+tags: [drafts, deep-learning, machine-learning, pytorch]
 pin: false # pin post
 math: true # math latex syntax
 mermaid: false # diagram & visualizations
@@ -13,9 +13,9 @@ image:
   alt: # A description of the image
 ---
 
-test draft 2 baby
-this is test 1234
+Math latex test
+This is an inline math example: 
 
-2 test
-
-draft test
+$$
+\int_{a}^{b} f(x)\,dx = F(b) - F(a)
+$$

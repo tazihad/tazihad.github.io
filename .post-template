@@ -5,8 +5,9 @@ date: 2024-08-28 16:33:00 +0600
 categories: [linux]
 tags: [linux]
 pin: false # pin post
-math: true # math latex syntax
+math: false # math latex syntax
 mermaid: false # diagram & visualizations
+published: false # publish post
 image:
   path: # 16:9 image
   lqip: 
