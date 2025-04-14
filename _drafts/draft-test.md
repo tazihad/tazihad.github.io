@@ -7,6 +7,7 @@ tags: [drafts, deep-learning, machine-learning, pytorch]
 pin: false # pin post
 math: true # math latex syntax
 mermaid: false # diagram & visualizations
+published: false
 image:
   path: # 16:9 image
   lqip: 
