@@ -20,3 +20,8 @@ This is an inline math example:
 $$
 \int_{a}^{b} f(x)\,dx = F(b) - F(a)
 $$
+
+
+$$
+Y = mX + b
+$$
