@@ -1,6 +1,6 @@
 ---
 title: Deep Learning Basics with Pytorch - Part 2
-description: Part 1 of Deep Learning Basics with Pytorch using JupyterLab
+description: Part 2 of Deep Learning Basics with Pytorch using JupyterLab
 date: 2025-04-09 6:33:00 +0600
 categories: [deep-learning]
 tags: [deep-learning, machine-learning, pytorch]
