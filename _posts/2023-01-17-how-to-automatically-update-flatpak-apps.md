@@ -1,8 +1,7 @@
 ---
 title: How to update Flatpak apps automatically
-categories:
-- linux
-tags: [linux,flatpak]
+categories: [linux]
+tags: [linux, flatpak]
 ---
 
 `cron` is not available in Silverblue but systemd Timers can be used instead.  

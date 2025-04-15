@@ -1,12 +1,10 @@
 ---
 title: 10 Things to do after installing Fedora Silverblue / Kinoite
-categories:
-- linux
-- silverblue
-tags: [linux,silverblue,kinoite,fedora]
+categories: [linux]
+tags: [linux, silverblue, kinoite, fedora]
 ---
 
-![Silverblue Desktop]({{ BASE_PATH }}/assets/images/2023-01-07-top-10-things-to-do-after-installing-fedora-silverblue-kinoite/Screenshot_20230107_184440.png)
+![Silverblue Desktop]({{ BASE_PATH }}/assets/images/2023-01-07-top-10-things-to-do-after-installing-fedora-silverblue-kinoite/Screenshot_20230107_184440.webp)
 
 **1. Check system update and upgrades**
 

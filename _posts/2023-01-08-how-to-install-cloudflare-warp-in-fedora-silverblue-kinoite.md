@@ -1,8 +1,6 @@
 ---
 title: How to use Cloudflare Warp in Fedora Silverblue & Kinoite using Podman
-categories: 
-- linux
-- silverblue
+categories: [linux, silverblue, cloudflare]
 tags: [cloudflare]
 ---
 

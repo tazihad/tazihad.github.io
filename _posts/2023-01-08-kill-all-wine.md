@@ -1,7 +1,6 @@
 ---
 title: Kill all WINE process in linux
-categories:
-- linux
+categories: [linux]
 tags: [wine]
 ---
 

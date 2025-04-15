@@ -1,7 +1,6 @@
 ---
 title: How to Use flatpak KeepassXC with flatpak Firefox or Chromium based browser.
-categories:
-- linux
+categories: [linux]
 tags: [linux,flatpak,keepassxc]
 ---
 

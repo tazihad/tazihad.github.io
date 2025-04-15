@@ -2,13 +2,13 @@
 title: Deep Learning Basics with Pytorch - Part 1
 description: Part 1 of Deep Learning Basics with Pytorch using JupyterLab
 date: 2025-04-08 16:33:00 +0600
-categories: [deep-learning]
+categories: [deep-learning, pytorch]
 tags: [deep-learning, machine-learning, pytorch]
 pin: false # pin post
 math: true # math latex syntax
 mermaid: false # diagram & visualizations
 image:
-  path: ../assets/images/2025-04-08-deep-learning-basics-with-pytorch/deep-learning-basics-banner.png
+  path: ../assets/images/2025-04-08-deep-learning-basics-with-pytorch/deep-learning-basics-banner.webp
   lqip: data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAABwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYgC7ABrVtaXaUAAA/s2DBAG0CXXVg2oNx6O9rSf7FJgw08q9aJ7lmmvJHpO19QNxoAAA
   alt: Deep Learning Basics with Pytorch Part 1 Banner
 ---
@@ -68,7 +68,7 @@ Next import torch
 ```python
 import torch
 ```
-![import torch](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-08-56 basics.png>)
+![import torch](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-08-56 basics.webp>)
 
 ## What is PyTorch and Tensor?
 PyTorch is a library for Processing Tensors. A Tensor is a number or a vector or a matrix or a n-dimensional array.
@@ -81,7 +81,7 @@ Let's create a basic tensor.
 t1 = torch.tensor(10)
 t1
 ```
-![tensor-ex-1](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-35-10 basics.png>)
+![tensor-ex-1](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-35-10 basics.webp>)
 
 
 Let's create different types of tensors
@@ -90,7 +90,7 @@ Let's create different types of tensors
 t2 = torch.tensor([10, 20, 30, 40])
 t2
 ```
-![vector tensor](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-40-50 basics.png>)
+![vector tensor](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-40-50 basics.webp>)
 another one
 ```python
 # Matrix
@@ -99,7 +99,7 @@ t3 = torch.tensor([[50, 60],
                    [90, 10]])
 t3
 ```
-![matrix tensor](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-38-50 basics.png>)
+![matrix tensor](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-38-50 basics.webp>)
 
 
 All of these are 1 dimensional array
@@ -114,7 +114,7 @@ t4 = torch.tensor([
      [170, 180, 190.]]])
 t4
 ```
-![3 dimensional tensor](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-44-59 basics.png>)
+![3 dimensional tensor](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-44-59 basics.webp>)
 
 
 Now we can actually see the shape of the tensor
@@ -130,7 +130,7 @@ We can also do arithmatic operation with these tensors.
 y = t1 + t2
 y
 ```
-![arithmatic operation](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-49-53 basics.png>)
+![arithmatic operation](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-49-53 basics.webp>)
 
 
 ## Numpy
@@ -144,7 +144,7 @@ import numpy as np
 x = np.array([[10, 20], [30, 40]])
 x
 ```
-![numpy example](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-53-21 basics.png>)
+![numpy example](<../assets/images/2025-04-08-deep-learning-basics-with-pytorch/Screenshot 2025-04-08 at 19-53-21 basics.webp>)
 
 So, In this tutorial we have just touch the water. We will be continuing this tutorial.  
 

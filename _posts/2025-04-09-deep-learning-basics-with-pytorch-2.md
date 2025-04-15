@@ -2,13 +2,13 @@
 title: Deep Learning Basics with Pytorch - Part 2
 description: Part 2 of Deep Learning Basics with Pytorch using JupyterLab
 date: 2025-04-09 6:33:00 +0600
-categories: [deep-learning]
+categories: [deep-learning, pytorch]
 tags: [deep-learning, machine-learning, pytorch]
 pin: false # pin post
 math: true # math latex syntax
 mermaid: false # diagram & visualizations
 image:
-  path: ../assets/images/2025-04-09-deep-learning-basics-with-pytorch-2/deep-learning-basics-banner-2.png
+  path: ../assets/images/2025-04-09-deep-learning-basics-with-pytorch-2/deep-learning-basics-banner-2.webp
   lqip: data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAABwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYgC7ABrVtaXaUAAA/s2DBAG0CXXVg2oNx6O9rSf7FJgw08q9aJ7lmmvJHpO19QNxoAAA
   alt: Deep Learning Basics with Pytorch Part 2 Banner
 ---
@@ -60,7 +60,7 @@ plt.grid(True, alpha=0.3)
 
 plt.show()
 ```
-![study hour vs exam score](../assets/images/2025-04-09-deep-learning-basics-with-pytorch-2/image-1.png)
+![study hour vs exam score](../assets/images/2025-04-09-deep-learning-basics-with-pytorch-2/image-1.webp)
 
 
 As you can see, Sudy Hours vs Exam Score gives a straight line. With this line and data we can actually predict a score. We can only guess, a close guess. The more the hours the more the score.
@@ -101,7 +101,7 @@ plt.xlabel('Study Hours'), plt.ylabel('Exam Score')
 plt.legend(), plt.grid(True)
 plt.show()
 ```
-![predicted line](../assets/images/2025-04-09-deep-learning-basics-with-pytorch-2/image.png)
+![predicted line](../assets/images/2025-04-09-deep-learning-basics-with-pytorch-2/image.webp)
 
 For now we have just covered the basic Linear regression. We will continue with PyTorch in next tutorial.
 

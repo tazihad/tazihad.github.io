@@ -1,8 +1,9 @@
 ---
 title: How to run virt-manager in Fedora Silverblue / Kinoite using Distrobox
-categories:
-- linux
-- silverblue
+description: Guide to running Virt-Manager on Fedora Silverblue / Kinoite using Distrobox for seamless virtualization management.
+date: 2023-01-07 8:33:00 +0600
+categories: [linux, silverblue]
+tags: [linux, silverblue, kinoite, virt-manager]
 ---
 
 It's better we create a seperate home folder for our new distrobox.  
@@ -49,8 +50,8 @@ If Internet doesn't work inside virtual box. Make sure you route your network di
 Check what's your network interface: `ip link show`.  
 Change your Network from `virt-manager`.  
 
-NIC -> Virtual Network Interface -> Network Source.  
+NIC -> Virtual Network Interface -> Network Sourcea.  
 Change to Macvtap device...
 set device name: eg- `enp4s0f1`
 
-![Macvtap]({{ BASE_PATH }}/assets/images/2023-01-07-how-to-run-virt-manager-with-distrobox-in-fedora-silverblue-kinoite/Screenshot_20230108_000536.png)
+![Macvtap]({{ BASE_PATH }}/assets/images/2023-01-07-how-to-run-virt-manager-with-distrobox-in-fedora-silverblue-kinoite/Screenshot_20230108_000536.webp)
