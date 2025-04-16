@@ -103,6 +103,87 @@ plt.show()
 ```
 ![predicted line](../assets/images/2025-04-09-deep-learning-basics-with-pytorch-2/image.webp)
 
+Now we can use PyTorch to implement linear regression. 
+```python
+import torch
+import matplotlib.pyplot as plt
+
+# 1. Prepare the data (convert to tensors)
+study_hours = torch.tensor([10, 20, 30, 40, 50, 60, 70, 80], dtype=torch.float32)
+exam_scores = torch.tensor([480, 520, 710, 680, 830, 890, 920, 980], dtype=torch.float32)
+
+# 2. Create a simple linear model
+model = torch.nn.Linear(1, 1)  # 1 input, 1 output
+
+# 3. Choose loss function and optimizer
+loss_fn = torch.nn.MSELoss()  # Mean Squared Error
+optimizer = torch.optim.SGD(model.parameters(), lr=0.0001)  # Learning rate
+
+# 4. Train the model
+losses = []
+for epoch in range(1000):
+    # Reshape input to match model expectations
+    inputs = study_hours.view(-1, 1)
+    targets = exam_scores.view(-1, 1)
+    
+    # Forward pass
+    predictions = model(inputs)
+    loss = loss_fn(predictions, targets)
+    
+    # Backward pass
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
+    
+    # Store loss for plotting
+    losses.append(loss.item())
+
+# 5. Make predictions
+with torch.no_grad():
+    predicted_scores = model(study_hours.view(-1, 1))
+
+# 6. Visualize the results
+plt.figure(figsize=(10, 4))
+
+# Plot the data and predictions
+plt.subplot(1, 2, 1)
+plt.scatter(study_hours, exam_scores, label='Real Data')
+plt.plot(study_hours, predicted_scores, 'r-', label='Predictions')
+plt.xlabel('Study Hours')
+plt.ylabel('Exam Score')
+plt.legend()
+
+# Plot the training loss
+plt.subplot(1, 2, 2)
+plt.plot(losses)
+plt.xlabel('Training Epoch')
+plt.ylabel('Loss')
+
+plt.tight_layout()
+plt.show()
+
+# 7. Print the learned relationship
+weight = model.weight.item()
+bias = model.bias.item()
+print(f"\nLearned formula: Exam Score = {weight:.2f} × Study Hours + {bias:.2f}")
+print(f"Meaning: For each additional hour, score increases by ~{weight:.2f} points")
+
+new_hours = torch.tensor([35.0])
+predicted = model(new_hours.view(-1, 1))
+print(f"35 hours prediction: {predicted.item():.1f} points")
+```
+
+![prediction](../assets/images/2025-04-09-deep-learning-basics-with-pytorch-2/Untitled.webp)
+
+We have converted Python lists to PyTorch tensors. torch.nn.Linear(1, 1) creates a simple y = wx + b model.
+- Left plot: Points (real data) with red line (predictions).
+- Right plot: Loss decreasing as the model learns.
+
+The output should be: 
+Learned formula: Exam Score = 14.47 × Study Hours + 17.41
+Meaning: For each additional hour, score increases by ~14.47 points
+35 hours prediction: 523.8 points
+
 For now we have just covered the basic Linear regression. We will continue with PyTorch in next tutorial.
 
 

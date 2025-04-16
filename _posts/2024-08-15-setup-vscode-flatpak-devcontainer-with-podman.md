@@ -68,7 +68,6 @@ and put the setting
 ```
 - Test if vscode flatpak is connected and working with podman (optional)
 ```sh
-flatpak run --command=sh com.visualstudio.code
-/app/tools/podman/bin/podman-remote version
-/app/tools/podman/bin/podman-remote run --rm hello-world
+flatpak run --command=sh com.visualstudio.code -c \
+  "/app/tools/podman/bin/podman-remote version"
 ```
