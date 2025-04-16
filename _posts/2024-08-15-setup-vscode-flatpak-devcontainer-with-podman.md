@@ -38,7 +38,6 @@ systemctl --user status podman.socket
 flatpak override --user \
   --filesystem=xdg-run/podman:ro \
   --filesystem=/run/user/$UID/podman/podman.sock:ro \
-  --filesystem=/tmp:rw \
   com.visualstudio.code
 ```
 - Test podman socket connection
