@@ -7,7 +7,7 @@ tags: [linux, debian, kde plasma, minimal install, post-install tips]
 pin: false # pin post
 math: false # math latex syntax
 mermaid: false # diagram & visualizations
-published: false # publish post
+published: true # publish post
 image:
   path: ../assets/images/2025-04-21-debian-minimal-kde-plasma-post-install/debian-plasma-minimal-setup.webp
   lqip: data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABwBACdASoUAAsAPzmGuVOvKSWisAgB4CcJaACdOUDcMRKg0bEGJZs/h5PUgAD0BSLiW+6DZ7kGKBDOMYDkq/SJ0zEdEhA3Sz3OKnhoQZ9f7z7kqzY6HtzfJYT8Q7g0BGSt9q7iLP6EyeygznQAAA==
