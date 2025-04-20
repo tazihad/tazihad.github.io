@@ -17,7 +17,7 @@ This tutorial series is a hands on beginner guide for pytorch.
 
 Let's get started. This tutorial series will be comfortable to follow on Unix environment. If you are on Windows make sure to use WSL.
 
-# Environment Setup
+## Environment Setup
 
 We are going to need our environment. There are many ways to create environment. But we are going to use **Conda**.
 

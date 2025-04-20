@@ -15,7 +15,7 @@ image:
 
 Now that we have made our hand dirty. We are going to learn some basics. 
 
-# Linear Regression
+## Linear Regression
 Linear Regression is one of the most fundamental algorithm in Machine Learning.
 
 Here's a simple dataset.
