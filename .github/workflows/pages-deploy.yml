@@ -1,5 +1,15 @@
 name: "Build and Deploy"
 on:
+  schedule:
+    - cron: '0 0 * * *' # Every day at midnight UTC
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force deploy"
+        required: false
+        default: false
+        type: boolean
   push:
     branches:
       - main
