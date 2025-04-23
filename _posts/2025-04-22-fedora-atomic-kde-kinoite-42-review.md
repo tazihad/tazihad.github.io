@@ -30,7 +30,7 @@ Fedora Kinoite is:
 
 If you’ve used Fedora Silverblue, it’s basically the KDE version of that. But in my opinion, KDE makes it way more usable, especially for people who like a bit of customization.
 
-![fedora kinoite 42 with htop](../assets/images/2025-04-22-fedora-atomic-kde-kinoite-42-review/Screenshot_20250420_215025.png)
+![fedora kinoite 42 with htop](../assets/images/2025-04-22-fedora-atomic-kde-kinoite-42-review/Screenshot_20250420_215025.webp)
 
 ## ✨ What’s New in Fedora Kinoite 42? 
 
@@ -76,7 +76,7 @@ distrobox create --name ubuntu-dev --image ubuntu
 It’s perfect for developers or students working on multiple platforms.
 
 
-![distrobox ubuntu](../assets/images/2025-04-22-fedora-atomic-kde-kinoite-42-review/Screenshot_20250420_220314.png)
+![distrobox ubuntu](../assets/images/2025-04-22-fedora-atomic-kde-kinoite-42-review/Screenshot_20250420_220314.webp)
 
 ### Gaming on Kinoite – Yes, It Works
 
