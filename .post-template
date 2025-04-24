@@ -9,7 +9,7 @@ math: false # math latex syntax
 mermaid: false # diagram & visualizations
 published: false # publish post
 image:
-  path: # 16:9 image
+  path: # 16:9 image | 1200 x 630 px
   lqip: 
   alt: # A description of the image
 ---
