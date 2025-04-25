@@ -1,7 +1,7 @@
 ---
 title: How to Use Virt Manager on Fedora Atomic, Silverblue, and Kinoite - Easy VM Setup Guide
 description: Learn how to install and use Virt Manager on Fedora Atomic desktops like Silverblue, Kinoite, and Sericea. This guide covers VM setup using Toolbox and Flatpak for seamless virtualization on immutable systems.
-date: 2025-04-25 16:33:00 +0600
+date: 2025-04-25 08:33:00 +0600
 categories: [linux]
 tags: [linux]
 pin: false # pin post
