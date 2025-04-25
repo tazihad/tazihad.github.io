@@ -7,7 +7,7 @@ tags: [linux]
 pin: false # pin post
 math: false # math latex syntax
 mermaid: false # diagram & visualizations
-published: false # publish post
+published: true # publish post
 image:
   path: ../assets/images/2025-04-24-virt-manager-in-fedora-silverblue-kinoite-atomic/virt-manager-poster.webp
   lqip: data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJagCdABj0JzwgpAAA/uMDmHI4wpu5pSPwNURWM+sXDe9gdxf4bBCY6YmWaqMLIAA=
