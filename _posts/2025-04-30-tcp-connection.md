@@ -7,7 +7,7 @@ tags: [linux, networking]
 pin: false # pin post
 math: false # math latex syntax
 mermaid: false # diagram & visualizations
-published: false # publish post
+published: true # publish post
 image:
   path: ../assets/images/2025-04-30-tcp-connection/tcp-connection.webp
   lqip: data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCw7B5N3Tjv+mfQAAD+3uweJMBO77Ig5B1G75VlIznK/33P8zpRrYQZaBtuDd9b5QeKwkXx2gAA
