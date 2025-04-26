@@ -8,8 +8,11 @@ pin: false
 math: false
 mermaid: false
 published: true
+image:
+  path: ../assets/images/2025-04-26-buffer-flow-basic/buffer-flow-cover.webp
+  lqip: data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBOgA7Oy6oVAEHrwQAD9jDOhndKN8MH7Y+5gmmiPk/SEYXlsElYN68kVMj+QygAAAA==
+  alt: Buffer flow cover
 ---
-
 
 ## Introduction: Buffer Overflow Attack Basics
 
