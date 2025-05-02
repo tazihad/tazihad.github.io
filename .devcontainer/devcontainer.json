@@ -18,6 +18,7 @@
     "runArgs": [
         "--userns=keep-id"
     ],
+    "remoteuser": "vscode",
     "containerUser": "vscode",
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,Z",
     "workspaceFolder": "/workspace",
