@@ -20,8 +20,8 @@
     ],
     "remoteuser": "vscode",
     "containerUser": "vscode",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,Z",
-    "workspaceFolder": "/workspace",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/${localWorkspaceFolderBasename},type=bind,Z",
+    "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
     "postCreateCommand": "bundle install",
     "postStartCommand": "bundle exec jekyll serve --host 0.0.0.0 --drafts --unpublished --future --livereload --incremental",
     "forwardPorts": [4000]
