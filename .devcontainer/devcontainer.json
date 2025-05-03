@@ -22,8 +22,8 @@
     "containerUser": "vscode",
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/${localWorkspaceFolderBasename},type=bind,Z",
     "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
-    "postCreateCommand": "bundle install",
-    "postStartCommand": "bundle exec jekyll serve --host 0.0.0.0 --drafts --unpublished --future --livereload --incremental",
+    "postCreateCommand": "sh .devcontainer/scripts/install-dependencies.sh",
+    "postStartCommand": "sh .devcontainer/scripts/bundle-run.sh",
     "forwardPorts": [4000]
 }
 
