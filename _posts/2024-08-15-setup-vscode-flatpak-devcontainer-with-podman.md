@@ -53,7 +53,9 @@ You should see OK if everything is alright.
 flatpak run --command=sh com.visualstudio.code -c \
   "/app/extra/vscode/bin/code --install-extension ms-vscode-remote.remote-containers"
 ```
-- We need to replace docker with podman (podman-remote that connect with host podman). We can do that by opening vscode and go to user setting `ctrl + ,`. and search for `dev.containers.dockerPath` change the setting from `docker` to `/app/tools/podman/bin/podman/podman-remote`
+- We need to replace docker with podman (podman-remote that connect with host podman). We can do that by opening vscode and go to user setting `ctrl + ,`. and search for `dev.containers.dockerPath` change the setting from `docker` to `/app/tools/podman/bin/podman/podman-remote`. And search for `dev.containers.dockerSocketPath` change it to `/run/user/$UID/podman/podman.sock`. Replace `$UID` with yours.
+
+To open and edit this file with your favorite text editor (e.g., code, micro, vim, or gedit):
 Or from terminal
 ```sh
 mkdir -p ~/.var/app/com.visualstudio.code/config/Code/User
@@ -62,9 +64,13 @@ nano ~/.var/app/com.visualstudio.code/config/Code/User/settings.json
 and put the setting
 ```json
 {
-    "dev.containers.dockerPath": "/app/tools/podman/bin/podman-remote"
+    "dev.containers.dockerPath": "/app/tools/podman/bin/podman-remote",
+    "dev.containers.dockerSocketPath": "/run/user/$UID/podman/podman.sock"
 }
 ```
+> replace `$UID` with yours. Find with `id -u`  
+
+
 - Test if vscode flatpak is connected and working with podman (optional)
 ```sh
 flatpak run --command=sh com.visualstudio.code -c \
