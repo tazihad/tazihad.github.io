@@ -76,3 +76,7 @@ and put the setting
 flatpak run --command=sh com.visualstudio.code -c \
   "/app/tools/podman/bin/podman-remote version"
 ```
+
+
+
+Check out [How I Built a Dev Container Workflow with Flatpak VSCode, Devcontainer and Podman on Wayland]({% post_url 2025-05-04-setup-flatpak-vscode-devcontainer-podman-wayland-gui %}) for more about Vscode devcontainer running gui.

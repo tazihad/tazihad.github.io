@@ -7,7 +7,7 @@ tags: [vscode, docker, podman, devcontainer, flatpak, rust, gui, wayland]
 pin: false # pin post
 math: false # math latex syntax
 mermaid: false # diagram & visualizations
-published: false # publish post
+published: true # publish post
 image:
   path: ../assets/images/2025-05-04-setup-flatpak-vscode-devcontainer-podman-wayland-gui/devcontainer-poster.webp
   lqip: data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYgC7AB07rW+973ydAVAAAP7k1krNAOIvhDygB2K00bKyOo49JGYLO58qLuwRueizRVly6R2444VlPyyTPFOkpgV0qNOuh2QAAA==
@@ -262,4 +262,6 @@ For Fedora podman already has `/tmp` permission. If in any other distro you have
 You really don't need explictly allow `vscode` to run on `wayland`. Even if vscode uisng `x11`. The gui should be uisng `xwayland`.
 
 
+
+Check out [Setup Devcontainer in VSCode Flatpak with Podman]({% post_url 2024-08-15-setup-vscode-flatpak-devcontainer-with-podman %}) for more about Vscode devcontainer.
 
