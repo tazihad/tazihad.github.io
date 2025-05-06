@@ -1,5 +1,5 @@
 ---
-title: How I Built a Dev Container Workflow with Flatpak VSCode, Devcontainer and Podman on Wayland
+title: How I Built a Dev Container Workflow for GUI development with Flatpak VSCode, Devcontainer and Podman on Wayland
 description: Learn how I set up a DevContainer workflow using Flatpak VSCode, Podman, and Wayland. Running a rust gui project. Perfect for rootless, containerized development on modern Linux desktops.
 date: 2025-05-04 08:33:00 +0600
 categories: [linux]
