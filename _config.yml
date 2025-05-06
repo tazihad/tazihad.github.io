@@ -197,11 +197,6 @@ defaults:
       path: assets/img/favicons
     values:
       swcache: true
-  - scope:  # a second for bing in / directory
-      path: assets/img/favicons
-      name: favicon.ico
-    values:
-      permalink: /favicon.ico        
 
 sass:
   style: compressed
