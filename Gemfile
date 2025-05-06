@@ -12,3 +12,11 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
+
+group :jekyll_plugins do
+  # admin page
+  gem 'jekyll-admin'
+
+  # open external links in a new tab
+  gem 'jekyll-target-blank'
+end

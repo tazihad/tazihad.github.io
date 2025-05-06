@@ -196,7 +196,12 @@ defaults:
   - scope:
       path: assets/img/favicons
     values:
-      swcache: true    
+      swcache: true
+  - scope:  # a second for bing in / directory
+      path: assets/img/favicons
+      name: favicon.ico
+    values:
+      permalink: /favicon.ico        
 
 sass:
   style: compressed
@@ -230,4 +235,14 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
+plugins:
+  - jekyll-admin
+  - jekyll-target-blank
+
+jekyll_admin:
+  hidden_links:
+    - staticfiles
+    - datafiles
+    - configuration
+  homepage: "pages"
 
