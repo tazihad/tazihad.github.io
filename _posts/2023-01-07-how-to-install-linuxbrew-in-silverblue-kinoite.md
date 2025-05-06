@@ -1,5 +1,5 @@
 ---
-title: How to install Brew / LinuxBrew in Fedora Silverblue & Kinoite
+title: How to install Homebrew (Brew / LinuxBrew) in Fedora Silverblue & Kinoite
 description: Learn how to install Homebrew (LinuxBrew) on Fedora Silverblue & Kinoite using a container-friendly approach.
 date: 2023-01-07 6:33:00 +0600
 categories: [linux, silverblue]
