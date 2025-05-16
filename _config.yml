@@ -241,3 +241,5 @@ jekyll_admin:
     - configuration
   homepage: "pages"
 
+include:
+  - ads.txt
