@@ -67,7 +67,7 @@ If you have secureboot enabled. Follwo this guide.
 Install the following tools: 
 ```sh
 sudo dnf install kmodtool akmods mokutil openssl 
-```w
+```
 
 To generate a key with the default values: 
 
@@ -396,6 +396,58 @@ sudo rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.bla
 
 Reboot to load driver
 
+## Method 4: negativo17 [3rd party]
+
+I am not going to be too much into what is negativo17 repo. It's a 3rd party NVIDIA driver repo. Let's call it he have different view of how NVIDIA driver should be installed. You can further [read into his blog](https://negativo17.org/nvidia-driver/).
+
+Make sure to uninstall any previous nVidia drivers, and do a proper cleanup.
+
+Disable the RPMFusion's nVidia drivers repo:
+```sh
+cd /etc/yum.repos.d/
+sudo sed -ie 's/enabled=1/enabled=0/g' rpmfusion-nonfree-nvidia-driver.repo
+```
+
+Download the [negativo17's repo file for nVidia drivers](https://negativo17.org/repos/fedora-nvidia.repo):
+
+```sh
+sudo wget https://negativo17.org/repos/fedora-nvidia.repo -o fedora-nvidia.repo
+```
+
+Install the driver  
+
+```sh
+sudo dnf update
+sudo dnf install nvidia-driver
+sudo dnf install nvenc nvidia-driver-NvFBCOpenGL # optional for NVENC encoding, hardware encoding for Steam In-Home Streaming
+```
+
+Disable nouveau drivers:  
+```sh
+echo -e "blacklist nouveau\noptions nouveau modeset=0" | sudo tee /etc/modprobe.d/blacklist-nouveau.conf
+sudo dracut --force # Rebuilds the initramfs
+```
+
+**For Fedora Atomic**
+
+Download the repos from above.  
+
+Update the rpm repos metadata:
+```sh
+sudo rpm-ostree refresh-md
+```
+Install Drivers
+```sh
+sudo rpm-ostree install nvidia-driver
+```
+Disable nouveau
+```sh
+sudo rpm-ostree kargs --append=rd.driver.blacklist=nouveau \
+                        --append=modprobe.blacklist=nouveau \
+                        --append=nvidia-drm.modeset=1
+```
+
+Reboot
 
 ## Troubleshooting
 
