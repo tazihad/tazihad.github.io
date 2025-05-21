@@ -20,12 +20,13 @@ _site
 # RubyGems
 *.gem
 
-# Node dependencies
+# NPM dependencies
 node_modules
 package-lock.json
 
 # IDE configurations
 .idea
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
