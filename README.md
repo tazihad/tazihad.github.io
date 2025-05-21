@@ -35,6 +35,13 @@ Generate icons:
 3. [Iconifier](https://iconifier.net/)
 
 
+### Important resources
+
+cdn landing page: https://www.jsdelivr.com/package/gh/tazihad/tazihad.github.io
+cdn: https://cdn.jsdelivr.net/gh/tazihad/tazihad.github.io/
+
+
+
 ## License
 
 This work is published under [MIT][mit] License.
