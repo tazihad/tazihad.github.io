@@ -39,6 +39,7 @@ Generate icons:
 
 cdn landing page: https://www.jsdelivr.com/package/gh/tazihad/tazihad.github.io  
 cdn: https://cdn.jsdelivr.net/gh/tazihad/tazihad.github.io/  
+cdn purge cache: https://www.jsdelivr.com/tools/purge
 
 
 
