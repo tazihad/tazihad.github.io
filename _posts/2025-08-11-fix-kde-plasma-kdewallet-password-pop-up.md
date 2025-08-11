@@ -7,7 +7,7 @@ tags: [linux, fedora, debian, kde, kdewallet]
 pin: false # pin post
 math: false # math latex syntax
 mermaid: false # diagram & visualizations
-published: true # publish post
+published: false # publish post
 image:
   path: ../assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/nvidia-cover.webp
   lqip: data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZQC3uB6CQx/eUAAA/k0cFKTZa8tCWyuJjJC2btTTck5z/lKjqqTbyjdx6ap/AAA=
