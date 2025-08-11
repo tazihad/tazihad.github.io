@@ -7,11 +7,11 @@ tags: [linux, fedora, debian, kde, kdewallet]
 pin: false # pin post
 math: false # math latex syntax
 mermaid: false # diagram & visualizations
-published: false # publish post
+published: true # publish post
 image:
-  path: ../assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/nvidia-cover.webp
-  lqip: data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZQC3uB6CQx/eUAAA/k0cFKTZa8tCWyuJjJC2btTTck5z/lKjqqTbyjdx6ap/AAA=
-  alt: fedora nvidia driver
+  path: ../assets/images/2025-08-11-fix-kde-plasma-kdewallet-password-pop-up/fix-kde-wallet-pop-up.webp
+  lqip: data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoUAAsAPzmEuVOvKKWisAgB4CcJbACdL1yB021UblITisMhegAA/duckkubEA2GZN2v5jRJY++gPRz8NGKYKhMy/4N0ImMyDHxd4+kcPTzl3TWjVMVpDlQHdl7lMj4E1hvgPkAggAA=
+  alt: kde wallet pop up fix
 ---
 
 If you use KDE Plasma, you’ve probably run into this little annoyance — every time you log in, KDE Wallet pops up asking for a password. It doesn’t matter if you’re just trying to open your browser or sync your email, the popup is always there, interrupting your workflow.

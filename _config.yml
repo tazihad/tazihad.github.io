@@ -60,8 +60,8 @@ webmaster_verifications:
 analytics:
   google:
     id: 'G-QTJKQ3VSQQ'                # fill in your Google Analytics ID
-  goatcounter:
-    id: zihad
+#  goatcounter:
+#    id: zihad
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
