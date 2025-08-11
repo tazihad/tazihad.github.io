@@ -45,6 +45,13 @@ comment this:
 ```
 > or your ethernet device name
 
+You can also edit `/etc/NetworkManager/NetworkManager.conf` to give Network Manager full control over your network devices. Set `managed=true`.
+```sh 
+[ifupdown]
+managed=true
+```
+
+
 ## Username is not in the sudoers file  
 To get root, then add your user to the sudo group, use:
 ```sh
@@ -116,12 +123,16 @@ Update grub
 sudo update-grub
 ```
 
-setup plymouth
-
-```sh
-plymouth-set-default-theme -l
-sudo plymouth-set-default-theme -R bgrt
+Setup plymouth. Edit `/etc/plymouth/plymouthd.conf`
+```conf
+[Daemon]
+Theme=bgrt
 ```
+Than 
+```sh
+sudo update-initramfs -u
+```
+
 
 ## Mount Drives
 
