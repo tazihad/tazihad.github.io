@@ -24,9 +24,9 @@ Prerequisites: `podman`, `flatpak`
 
 - Install flatpak vscode and podman
 ```sh
-flatpak install -y \
-  com.visualstudio.code \
-  com.visualstudio.code.tool.podman
+flatpak install -y flathub \
+    com.visualstudio.code//stable \
+    com.visualstudio.code.tool.podman//stable
 ```
 - Start podman socket
 ```sh
