@@ -1,13 +1,13 @@
 ---
-title: How to Properly Use Fedora Atomic Desktops: Silverblue, Kinoite, and Bazzite Explained
-description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
+title: "How to Properly Use Fedora Atomic Desktops: Silverblue, Kinoite, and Bazzite Explained"
+description: "Learn the proper way to use Fedora’s atomic desktop variants—Silverblue, Kinoite, and Bazzite. This guide explains their unique features, package management, container workflows, and tips for a smooth, efficient experience on immutable Fedora desktops."
 date: 2025-09-25 12:33:00 +0600
 categories: [linux, fedora]
 tags: [silverblue, kinoite, bazzite, fedora, atomic]
 pin: false # pin post
 math: false # math latex syntax
 mermaid: false # diagram & visualizations
-published: false # publish post
+published: true # publish post
 image:
   path: ../assets/images/2025-09-25-fedora-atomic-silverblue-kinoite-bazzite-usage/cover.webp
   lqip: data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAwCdASoUAAsAPzmGulOvKKWisAgB4CcJYgCw7Bcx8Vf7V27oAAD6c2jTpPubDweSQEc6d8Qeggy3Oz7QfRuEYK9UUS7FofziSlzBraW0oAAA
