@@ -28,6 +28,8 @@ flatpak install -y flathub \
     com.visualstudio.code//stable \
     com.visualstudio.code.tool.podman//stable
 ```
+> Note that sometime vscode may not see podman due to version mismatch. You can try installing other version of podman using `flatpak install com.visualstudio.code.tool.podman`
+
 - Start podman socket
 ```sh
 systemctl --user enable --now podman.socket && \
