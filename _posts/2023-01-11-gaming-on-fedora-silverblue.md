@@ -48,14 +48,14 @@ flatpak install flathub com.valvesoftware.Steam
 ```
 
 Now use Flatseal to set permission to access folders or drive other than the default location.  Add location to `Other files`.  
-![flatseal permission](../assets/images/2023-01-11-gaming-on-fedora-silverblue/Screenshot_20230111_151006.webp)
+![flatseal permission](/assets/images/2023-01-11-gaming-on-fedora-silverblue/Screenshot_20230111_151006.webp)
   
 
 Open Steam. From Settings enable `Enable Steam Play for supported titles`. And `Enable Steam Play for all other titles`. Use any version. from drop down. `Proton Experimental` is fine.  
-![steam play](../assets/images/2023-01-11-gaming-on-fedora-silverblue/Screenshot_20230111_151427.webp)
+![steam play](/assets/images/2023-01-11-gaming-on-fedora-silverblue/Screenshot_20230111_151427.webp)
 
 To enable MangoHud for all Steam games. You can either set `MANGOHUD=1` in `Environment` with flatseal. Or from Command.   
-![mangohud](../assets/images/2023-01-11-gaming-on-fedora-silverblue/Screenshot_20230111_151731.webp)
+![mangohud](/assets/images/2023-01-11-gaming-on-fedora-silverblue/Screenshot_20230111_151731.webp)
 
 command:  
 ```bash
@@ -108,7 +108,7 @@ Below in the `Options` tab. Go to `Dependencies`. And install some recommended d
 - gecko
 
 From the `Installed Programs...` option. Install `Blizzard Battle.net`, `EA Launcher`, `Origin`, `Ubisoft`. Install the Launcher you want.  That's it. Enjoy playing.  
-![bottles programs](../assets/images/2023-01-11-gaming-on-fedora-silverblue/Screenshot_20230111_154423.webp)
+![bottles programs](/assets/images/2023-01-11-gaming-on-fedora-silverblue/Screenshot_20230111_154423.webp)
 
 To install **itch.io** inside the bottle. Make sure you [install Windows version](https://itch.io/app/download?platform=windows) of the client.  
 
@@ -121,7 +121,7 @@ Now change the **launch option** from 3 dot menu.
 Put `Command Argument` as `--prefer-launch --appname itch`
 
 Now run **itch** as usual. You can create Application Launcher shortcut of all of your launcher.  
-![itch](../assets/images/2023-01-11-gaming-on-fedora-silverblue/Screenshot_20230111_155335.webp)
+![itch](/assets/images/2023-01-11-gaming-on-fedora-silverblue/Screenshot_20230111_155335.webp)
 
 
 ### Waydroid / Android Games
@@ -134,7 +134,7 @@ In this section we will install League of Legends inside distrobox.
 
 ### League of Legends in Silverblue  
 
-![League of Legends in Silverblue](../assets/images/2023-01-11-gaming-on-fedora-silverblue/Screenshot_20230114_221025.webp)
+![League of Legends in Silverblue](/assets/images/2023-01-11-gaming-on-fedora-silverblue/Screenshot_20230114_221025.webp)
 
 First, lets create a distrobox environment named `gaming`. Use any you wish.  
 
