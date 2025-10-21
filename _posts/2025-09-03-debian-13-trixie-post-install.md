@@ -9,7 +9,7 @@ math: false
 mermaid: false
 published: true
 image:
-  path: ../assets/images/2025-09-03-debian-13-trixie-post-install/debian13.webp
+  path: /assets/images/2025-09-03-debian-13-trixie-post-install/debian13.webp
   lqip: data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACQAwCdASoUAAsAPzmGulOvKSWisAgB4CcJQAALuQP6MPRG3sTcAP7l9T16qwlVBLTi65aoStp5jj1elA2/t9YvkqGFnB+7MrQ4hFfRU1O23DtIS8AAAA==
   alt: "Debian 13 Trixie desktop setup"
 ---
@@ -42,7 +42,7 @@ From Debian 13 a new short way to `update` and `upgrade` your system.
 sudo apt --update upgrade
 ```
 
-![update](../assets/images/2025-09-03-debian-13-trixie-post-install/Screenshot_20250903_190325.webp)
+![update](/assets/images/2025-09-03-debian-13-trixie-post-install/Screenshot_20250903_190325.webp)
 
 
 
@@ -62,7 +62,7 @@ Then, add a `#` at the beginning of every line. For example, change:
 #deb http://deb.debian.org/debian-security trixie-security main contrib non-free
 ```
 
-![old sources](../assets/images/2025-09-03-debian-13-trixie-post-install/Screenshot_20250903_190422.webp)
+![old sources](/assets/images/2025-09-03-debian-13-trixie-post-install/Screenshot_20250903_190422.webp)
 
 #### Create new sources file
 Create new file in `/etc/apt/sources.list.d/debian.sources`. And put
@@ -82,7 +82,7 @@ Enabled: yes
 Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 ```
 
-![new sources](../assets/images/2025-09-03-debian-13-trixie-post-install/Screenshot_20250903_190514.webp)
+![new sources](/assets/images/2025-09-03-debian-13-trixie-post-install/Screenshot_20250903_190514.webp)
 
 Note that we put `non-free` and `non-free-firmware` for more packages.
 
@@ -117,7 +117,7 @@ But you can also have seperate Flathub store called **Bazaar**.
 flatpak install flathub io.github.kolunmi.Bazaar
 ```
 
-![Bazaar](../assets/images/2025-09-03-debian-13-trixie-post-install/Screenshot_20250903_190806.webp)
+![Bazaar](/assets/images/2025-09-03-debian-13-trixie-post-install/Screenshot_20250903_190806.webp)
 
 Install flatpak permission manager
 ```sh
@@ -200,11 +200,11 @@ sudo apt install extrepo
 
 Uncomment `- contrib` and `- non-free` lines in `/etc/extrepo/config.yaml`.
 
-![extrepo-remove-comment](../assets/images/2025-09-03-debian-13-trixie-post-install/Screenshot_20250903_182039-removebg-preview.webp)
+![extrepo-remove-comment](/assets/images/2025-09-03-debian-13-trixie-post-install/Screenshot_20250903_182039-removebg-preview.webp)
 
 It should look like this:
 
-![extrepo-remove-comment-2](../assets/images/2025-09-03-debian-13-trixie-post-install/Screenshot_20250903_182922.webp)
+![extrepo-remove-comment-2](/assets/images/2025-09-03-debian-13-trixie-post-install/Screenshot_20250903_182922.webp)
 
 
 You can list what apps available in extrepo

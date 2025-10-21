@@ -9,7 +9,7 @@ math: false # math latex syntax
 mermaid: false # diagram & visualizations
 published: true # publish post
 image:
-  path: ../assets/images/2025-04-27-getting-started-with-vim/learn-vim.webp
+  path: /assets/images/2025-04-27-getting-started-with-vim/learn-vim.webp
   lqip: data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAwCdASoUAAoAPzmGuVOvKSWisAgB4CcJQBkTAz8y+5r3tJ3dsOoAAPkIlFgk153fdxiiU95KdLTy1+2TzU+Zc/Qk0sHaKmu5Jav9YvuutaIIzEC/61Xxkm3SAliOch3/CSyyEWbnM2OgAAA=
   alt: getting started with vim
 ---
@@ -64,7 +64,7 @@ Vim adds to those features.
 * Allows the screen to be split for editing multiple files.
 * Support for plugins, and great control over config and startup files.
 
-![Difference between Vim and Vi](../assets/images/2025-04-27-getting-started-with-vim/vim-vs-vi.webp)
+![Difference between Vim and Vi](/assets/images/2025-04-27-getting-started-with-vim/vim-vs-vi.webp)
 
 ## Vim Modes
 
@@ -82,7 +82,7 @@ You change modes by pressing `<ESC>` (the escape key) to switch from any mode ba
 From Normal mode, enter Insert mode with `i`, Replace mode with `R`, Visual mode with `v`, Visual Line mode with `V`, 
 Visual Block mode with `<C-v>` (`Ctrl-V`, sometimes also written `^V`), and Command-line mode with `:` .
 
-![vim modes](../assets/images/2025-04-27-getting-started-with-vim/Vim-modes.webp)
+![vim modes](/assets/images/2025-04-27-getting-started-with-vim/Vim-modes.webp)
 
 ## Customizing Vim(.vimrc)
 

@@ -9,7 +9,7 @@ math: false
 mermaid: false
 published: true
 image:
-  path: ../assets/images/2025-04-26-buffer-flow-basic/buffer-flow-cover.webp
+  path: /assets/images/2025-04-26-buffer-flow-basic/buffer-flow-cover.webp
   lqip: data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBOgA7Oy6oVAEHrwQAD9jDOhndKN8MH7Y+5gmmiPk/SEYXlsElYN68kVMj+QygAAAA==
   alt: Buffer flow cover
 ---
@@ -39,12 +39,12 @@ Buffer overflow is much like other app attack, like, we enumerate the app and se
 
 First let's understand in the eazy way how it work, it much like a bucket, if you have a bucket you surely know how much water you can insert to it, if you insert more than the bucket can contains, the water will flow out the bucket, and that what happens on buffer overflow. We have a memory space that contain data, and we insert more data than the **memory segment** can contain.
 
-![water-overflow](../assets/images/2025-04-25-buffer-flow-basic/bo-001.webp)  
+![water-overflow](/assets/images/2025-04-25-buffer-flow-basic/bo-001.webp)  
 **Figure 1** Flow the bucket.
 
 The problem that the buffer overflow made is not just flow out the memory segment, it flow out with new instruction which in some way make the program to execute the new instruction like they are part of the program it self, you can think of it like someone give some laboratory guide instruction to do X and Y and Z, and he does, but in some point the instruction was change by another person without the laboratory guy notice and after he have ran them he gets other reactions that he expected to see.
 
-![over flow 2](../assets/images/2025-04-25-buffer-flow-basic/bo-002.webp)  
+![over flow 2](/assets/images/2025-04-25-buffer-flow-basic/bo-002.webp)  
 **Figure 2** laboratory explosion.
 
 So, to understand it deeply, on the computer we have what called RAM (Random Access Memory), that RAM hold a portion of virtual memory (the complete **virtual memory space** includes both RAM and potentially disk space), and when some code are executable the initial data of the program are loaded into the virtual memory space, this often includes instructions, libraries, and static data.
@@ -95,7 +95,7 @@ Let's break down the process of executing code step by step, simplifying the exp
 
 In summary, when you run code, the CPU fetches and executes instructions stored in memory. Registers help with quick data storage, and different memory segments organize data and code. The stack is crucial for managing function calls, while the CPU's control unit oversees the flow of instructions. It's a complex dance orchestrated by the CPU to make your program run.
 
-![operation](../assets/images/2025-04-25-buffer-flow-basic/bo-003.webp)  
+![operation](/assets/images/2025-04-25-buffer-flow-basic/bo-003.webp)  
 **Figure 3** The operation when code are executed.
 
 ## Debugging tools and how to use them.
@@ -147,7 +147,7 @@ ld -m elf_i386 -o shellcode shellcode.o
 ```
 
 We can check now it if work and give us new shell on our terminal:  
-![shell01](../assets/images/2025-04-25-buffer-flow-basic/shell01.webp)  
+![shell01](/assets/images/2025-04-25-buffer-flow-basic/shell01.webp)  
 **Figure 4** New shell on our terminal.
 
 Now, we want to convert that binary to hex value so we can use it on   the buffer overflow example here. We going to use the command objcopy to extract the binary content of the *.text* section from the input file "shellcode" and saves it into a new file named "shellcode.bin". This is often done to extract the raw machine code (binary) from an executable or object file, which can be useful for various purposes such as embedding in other programs or systems.
@@ -220,12 +220,12 @@ so now, let's look on that closely, we run gdb for debug that code using:
 ```
 After run that code we can run `list` command for see the lines of code, please note, if the code was compile without debugging flag, we aren't be able to see the full lines  of code, to run flag for debugging in `gcc` we can use `-g` on the compile process.
 
-![bo-004](../assets/images/2025-04-25-buffer-flow-basic/bo-004.webp)  
+![bo-004](/assets/images/2025-04-25-buffer-flow-basic/bo-004.webp)  
 **Figure 4** List command on gdb.
 
 If we run `disassemble main` we will be able to see the assembly version of our code, these list may seen odd to a new student on that reverse engineer field, but it not so difficult to understand, so let's break it down column after column.
 
-![disassembl main](../assets/images/2025-04-25-buffer-flow-basic/bo-005.webp)  
+![disassembl main](/assets/images/2025-04-25-buffer-flow-basic/bo-005.webp)  
 **Figure 5** disassemble main.
 
 On the first column we can see the odd number, `0x00001139`, this number represent the address location for the following line of code, next to it we can see `<+0>` which is indicates that the assembly instruction locate on 0 byte which mean that this is the start location of the code, you can see that this number goes up, on the third  line we can see 4, which represent that the assembly instruction is 4 bytes away from the previous instruction.
@@ -268,12 +268,12 @@ Now, let's break down the assembly code line by line for getting good understand
 
 So now let's perform the attack, first we going the execute the code, we will see that it get some error.
 
-![segment fault](../assets/images/2025-04-25-buffer-flow-basic/bo-006.webp)  
+![segment fault](/assets/images/2025-04-25-buffer-flow-basic/bo-006.webp)  
 **Figure 6** Segmentation fault.
 
 We getting this error, because the function should get at least one argument, so we must insert one argument, by doing so we can see that nothing goes back, we have no output as it should be.
 
-![nothing back](../assets/images/2025-04-25-buffer-flow-basic/bo-007.webp)
+![nothing back](/assets/images/2025-04-25-buffer-flow-basic/bo-007.webp)
 **Figure 7** Nothing back.
 
 So now, back again to gdb, we will run command inside of that to execute the code with one argument that are far more longer then 500 characters, just remember, the code design in such way that the buffer can only contain 500 characters but there is no function ot operator that boundaries the argument1 value and there is no check what is the length of that value, and this is the case of making buffer overflow, so we going to use the command `run` with line of python code to make the argument 1 as input to that small program, we insert A char which is `\x41` on hexadecimal.
@@ -310,7 +310,7 @@ Program received signal SIGSEGV, Segmentation fault.
 (gdb)
 ```
 
-![segment fault](../assets/images/2025-04-25-buffer-flow-basic/bo-008.webp)  
+![segment fault](/assets/images/2025-04-25-buffer-flow-basic/bo-008.webp)  
 **Figure 8** Segmentation fault after insert 500 of  A's.
 
 If we check the registers we will see that the eip register was fill up with `\x41`, so the system doesn't know how to operate with that value, so this is why we get that error, in fact on this case we overwrite the eip. we also can check the memory address to see the full vules that got in the stuck, the register esp is setup on the start of the stuck, so we can floow it and see all the characters we insert to the buffer. On our case ESP is point to the address `0xffffcd00`, so this is the start point we what to display the memory address table from the buffer.
@@ -319,24 +319,24 @@ If we check the registers we will see that the eip register was fill up with `\x
 
 Then if we scroll down, we will able to see the values of `\x41` we insert which cause the segmentation fault. On assembly the EBP (base pointer) are used to point to the next line of code that should be executed, every step that ebp value are change and the CPU execute each line base on the address location that are specified on that EBP.
 
-![address table](../assets/images/2025-04-25-buffer-flow-basic/bo-009.webp)  
+![address table](/assets/images/2025-04-25-buffer-flow-basic/bo-009.webp)  
 **Figure 9** Addresses table.
 
 That is mean we want to overwrite that EBP so we have control on the base pointer to point back to our code, also called return address, if we have the return address that is the location of our code, this is the address we should insert to EBP.
 
 So let's fill that code again with 508 characters of A's and check if that overwrite the EBP.
 
-![registers overriting](../assets/images/2025-04-25-buffer-flow-basic/bo-010.webp)  
+![registers overriting](/assets/images/2025-04-25-buffer-flow-basic/bo-010.webp)  
 **Figure 10** Registers overwriting.
 
 We can see that now the ESP is overwritten, so let's try to make that input bigger.
 
-![ebp](../assets/images/2025-04-25-buffer-flow-basic/bo-011.webp)  
+![ebp](/assets/images/2025-04-25-buffer-flow-basic/bo-011.webp)  
 **Figure 11** EBP is partly overwritten.
 
 Now we can see that EBP is only partly overwrite with our `\x41`, which mean for fill it up we need to use 512 characters on our input and that's it, we can control the EBP now.
 
-![control ebp](../assets/images/2025-04-25-buffer-flow-basic/bo-012.webp)
+![control ebp](/assets/images/2025-04-25-buffer-flow-basic/bo-012.webp)
 **Figure 12** Control the EBP.
 
 ```c

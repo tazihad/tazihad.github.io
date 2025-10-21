@@ -9,7 +9,7 @@ tags:
 
 We are going to use Parabolic Youtube Downloader and integrate with firefox browser. Chromium doesn't have the extension support.
 
-![Screenshot_20230625_181727](../assets/images/2024-08-15-download-youtube-videos-easily-in-linux/Screenshot_20240815_233347.webp)
+![Screenshot_20230625_181727](/assets/images/2024-08-15-download-youtube-videos-easily-in-linux/Screenshot_20240815_233347.webp)
 
 
 Prerequisite: `flatpak`

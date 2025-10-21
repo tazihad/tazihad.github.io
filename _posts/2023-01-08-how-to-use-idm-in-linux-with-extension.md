@@ -25,13 +25,13 @@ flatpak run --command=winetricks org.winehq.Wine
 ```
 
 3. Open Winetricks
-![open winetricks](../assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20250424_185512.webp)
+![open winetricks](/assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20250424_185512.webp)
 
 4. Select Winetricks Prefix **Architecture:** `64`, **Name:** `IDM`  
-![select prefix](../assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20250424_185531.webp)
+![select prefix](/assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20250424_185531.webp)
 
 5. Run **IDM** exe installer
-![run exe](../assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20250424_185633.webp)
+![run exe](/assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20250424_185633.webp)
 
 6. put this script as `idm` in `~/.local/bin/`.  
 Make it **executable**. 
@@ -84,11 +84,11 @@ StartupWMClass=Internet Download Manager
 2. Turn on the Extension by clicking it. Try Download something. It will prompt you to **install Native Messaging**. Install it.  
 [Native Messaging source](https://github.com/Emano-Waldeck/native-client/releases/tag/0.1.5).  
 3. Enable and pin extension:
-![enable extension](../assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20250424_200119.webp)
+![enable extension](/assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20250424_200119.webp)
 4. Install native messaging: Check connection should give you green signal
-![install native messaging](../assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20250424_200438.webp)
+![install native messaging](/assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20250424_200438.webp)
 5. Restart browser. Test a download.
-![test download](../assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20250424_200900.webp)
+![test download](/assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20250424_200900.webp)
 
 #### Chromium based browsers
 

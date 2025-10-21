@@ -9,7 +9,7 @@ math: false # math latex syntax
 mermaid: false # diagram & visualizations
 published: true # publish post
 image:
-  path: ../assets/images/2025-04-24-virt-manager-in-fedora-silverblue-kinoite-atomic/virt-manager-poster.webp
+  path: /assets/images/2025-04-24-virt-manager-in-fedora-silverblue-kinoite-atomic/virt-manager-poster.webp
   lqip: data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJagCdABj0JzwgpAAA/uMDmHI4wpu5pSPwNURWM+sXDe9gdxf4bBCY6YmWaqMLIAA=
   alt: install virt manager on fedora atomic
 ---
@@ -37,18 +37,18 @@ flatpak install org.virt_manager.virt_manager.Extension.Qemu
 Run Virt Manager from application launcher.
 
 You would see warning: Could not detect a default hypervisor. Because it can only run user instance.  
-![warning](../assets/images/2025-04-25-virt-manager-in-fedora-silverblue-kinoite-atomic/Screenshot_20250425_023436.webp)  
+![warning](/assets/images/2025-04-25-virt-manager-in-fedora-silverblue-kinoite-atomic/Screenshot_20250425_023436.webp)  
 
 Let's add **Add Connection**  
-![add connection](../assets/images/2025-04-25-virt-manager-in-fedora-silverblue-kinoite-atomic/Screenshot_20250425_023555.webp)  
+![add connection](/assets/images/2025-04-25-virt-manager-in-fedora-silverblue-kinoite-atomic/Screenshot_20250425_023555.webp)  
 
 Add `QEMU/KVM user session`  
-![user session](../assets/images/2025-04-25-virt-manager-in-fedora-silverblue-kinoite-atomic/Screenshot_20250425_023611.webp)  
+![user session](/assets/images/2025-04-25-virt-manager-in-fedora-silverblue-kinoite-atomic/Screenshot_20250425_023611.webp)  
 
 You should see user session created.  
-![user session created](../assets/images/2025-04-25-virt-manager-in-fedora-silverblue-kinoite-atomic/Screenshot_20250425_023625.webp)  
+![user session created](/assets/images/2025-04-25-virt-manager-in-fedora-silverblue-kinoite-atomic/Screenshot_20250425_023625.webp)  
 
 Now you can start creating VM as usuals
-![create vm](../assets/images/2025-04-25-virt-manager-in-fedora-silverblue-kinoite-atomic/Screenshot_20250425_023645.webp)  
+![create vm](/assets/images/2025-04-25-virt-manager-in-fedora-silverblue-kinoite-atomic/Screenshot_20250425_023645.webp)  
 
 Hope this guide helped you get started! If you have any questions, feel free to drop them in the comments. Happy virtualizing! 😄

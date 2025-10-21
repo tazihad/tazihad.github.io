@@ -9,7 +9,7 @@ math: false # math latex syntax
 mermaid: false # diagram & visualizations
 published: true # publish post
 image:
-  path: ../assets/images/2025-05-01-certs-ins-and-outs/hashing.webp
+  path: /assets/images/2025-05-01-certs-ins-and-outs/hashing.webp
   lqip: data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBOmUABfYf5KsR7+gnwA/rn9f7RT5tS3jm9teS8tyYQCXcICWWk0X0UkI2VBAAA=
   alt: hashing banner
 ---
@@ -305,7 +305,7 @@ Exponent: 65537 (0x10001)
 
 #### The process of securing communication with public and private keys
 
-![asymmetric flow](../assets/images/2025-05-01-certs-ins-and-outs/alice-bob.drawio.webp)
+![asymmetric flow](/assets/images/2025-05-01-certs-ins-and-outs/alice-bob.drawio.webp)
 
 In a very oversimplified manner this happens:
 
@@ -356,12 +356,12 @@ companies (i.e. subjects) bearing that subject’s public key
 
 #### How browsers validate the certificate of the website?
 
-![certs-in-and-outs](../assets/images/2025-05-01-certs-ins-and-outs/ca.drawio.webp)
+![certs-in-and-outs](/assets/images/2025-05-01-certs-ins-and-outs/ca.drawio.webp)
 > Browsers first checking the website cert against the os trusted root certs, then
 they are sending an OCSP request based on the certificate CRL Endpoint field in the certificate of the website.
 {: .prompt-tip }
 
-![crl example](../assets/images/2025-05-01-certs-ins-and-outs/crl-example.webp)
+![crl example](/assets/images/2025-05-01-certs-ins-and-outs/crl-example.webp)
 
 ### How new certificates can be validated? -> Chain of trust
 
@@ -1082,7 +1082,7 @@ SSL-Session:
     TLS session ticket lifetime hint: 7200 (seconds)
     TLS session ticket:
     0000 - 08 72 9b 9c 71 22 2e 4a-04 4a a6 8d e9 51 b8 3e   .r..q".J.J...Q.>
-    0010 - 4b d4 de 72 53 55 2d 25-04 fa 2f 15 33 b9 46 1c   K..rSU-%../.3.F.
+    0010 - 4b d4 de 72 53 55 2d 25-04 fa 2f 15 33 b9 46 1c   K..rSU-%/.3.F.
     0020 - 2d 16 13 4b 32 c2 b3 46-ff 16 76 c7 0e 28 ea 2d   -..K2..F..v..(.-
     0030 - 70 e3 95 80 bc dd af 40-e6 05 47 67 51 9e b1 0a   p......@..GgQ...
     0040 - 6b 6e a7 15 53 ba 07 8b-ec 92 3b d1 8c cc 83 77   kn..S.....;....w

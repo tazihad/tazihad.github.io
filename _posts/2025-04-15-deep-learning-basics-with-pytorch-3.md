@@ -9,7 +9,7 @@ math: true # math latex syntax
 mermaid: false # diagram & visualizations
 published: true # publish post
 image:
-  path: ../assets/images/2025-04-15-deep-learning-basics-with-pytorch-3/deep-learning-basics-pytorch-3.webp
+  path: /assets/images/2025-04-15-deep-learning-basics-with-pytorch-3/deep-learning-basics-pytorch-3.webp
   lqip: data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAABwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYgC7ABrVtaXaUAAA/s223eqEQtu5aLze9cvsz5dljofVatWyga8Fj+WJp0M3kYLZAAAA
   alt: deep learning basics pytorch
 ---
@@ -134,7 +134,7 @@ plt.legend()
 plt.show()
 ```
 
-![loss](../assets/images/2025-04-15-deep-learning-basics-with-pytorch-3/loss.webp)
+![loss](/assets/images/2025-04-15-deep-learning-basics-with-pytorch-3/loss.webp)
 
 When we give more predictions. We have more losses. And with these data our next guess can be more closer to accurate.
 

@@ -9,7 +9,7 @@ math: false # math latex syntax
 mermaid: false # diagram & visualizations
 published: true # publish post
 image:
-  path: ../assets/images/2025-08-11-fix-kde-plasma-kdewallet-password-pop-up/fix-kde-wallet-pop-up.webp
+  path: /assets/images/2025-08-11-fix-kde-plasma-kdewallet-password-pop-up/fix-kde-wallet-pop-up.webp
   lqip: data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoUAAsAPzmEuVOvKKWisAgB4CcJbACdL1yB021UblITisMhegAA/duckkubEA2GZN2v5jRJY++gPRz8NGKYKhMy/4N0ImMyDHxd4+kcPTzl3TWjVMVpDlQHdl7lMj4E1hvgPkAggAA=
   alt: kde wallet pop up fix
 ---
@@ -20,7 +20,7 @@ The good news? This isn’t a bug — it’s just KDE Wallet doing its job to st
 
 When I first installed Debian 13 with KDE Plasma, everything looked perfect — smooth animations, a clean interface, and all the customization options I love about KDE. But then came the first reboot… and KDE Wallet decided to greet me with a password popup. Every. Single. Time.
 
-![kdewallet popup](../assets/images/2025-08-11-fix-kde-plasma-kdewallet-password-pop-up/kdewallet-popup.webp)
+![kdewallet popup](/assets/images/2025-08-11-fix-kde-plasma-kdewallet-password-pop-up/kdewallet-popup.webp)
 
 At first, I thought I had messed up the installation or missed a package, but it turns out this is a common issue many Debian KDE users face right after a fresh install. In this post, I’ll share exactly how I fixed it so you can enjoy Debian 13 KDE without that annoying password prompt at every login.
 
@@ -35,7 +35,7 @@ sudo apt install kwalletmanager
 2. Create New Wallet `File -> New Wallet`. Give any name. Default is `kdewallet`.
 3. Select `Classic, blowfish encrypted file`. We will avoid GPG encryption. Because it isn't integrated well with kde.
 
-    ![blowfish](../assets/images/2025-08-11-fix-kde-plasma-kdewallet-password-pop-up/Screenshot_20250811_155031.webp)
+    ![blowfish](/assets/images/2025-08-11-fix-kde-plasma-kdewallet-password-pop-up/Screenshot_20250811_155031.webp)
 
 4. Set **Password**. Password must be **same as user password** that you have logged in. This is the most **importand** step.
 
