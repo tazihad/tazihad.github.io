@@ -9,7 +9,7 @@ math: false # math latex syntax
 mermaid: false # diagram & visualizations
 published: true # publish post
 image:
-  path: ../assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/nvidia-cover.webp
+  path: /assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/nvidia-cover.webp
   lqip: data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZQC3uB6CQx/eUAAA/k0cFKTZa8tCWyuJjJC2btTTck5z/lKjqqTbyjdx6ap/AAA=
   alt: fedora nvidia driver
 ---
@@ -91,7 +91,7 @@ systemctl reboot
 
 On the next boot MOK Management is launched and you have to choose "__Enroll MOK__"
 
-![enroll mok](../assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/319996349-dec5b957-e562-4e9e-bd22-678007aecdcf.webp)
+![enroll mok](/assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/319996349-dec5b957-e562-4e9e-bd22-678007aecdcf.webp)
 
 Choose "__Continue__" to enroll the key or "View key 0" to show the keys already enrolled.
 
@@ -270,15 +270,15 @@ Download the appropriate driver for your GPU from [NVIDIA's official website](ht
 
 Manual Driver Search
 
-![manual driver search](<../assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/Screenshot 2025-05-20 at 16-33-50 Download The Official NVIDIA Drivers NVIDIA.webp>)
+![manual driver search](</assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/Screenshot 2025-05-20 at 16-33-50 Download The Official NVIDIA Drivers NVIDIA.webp>)
 
 Find Driver
 
-![find driver](<../assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/Screenshot 2025-05-20 at 16-34-12 Driver Results GeForce GTX 850M Linux 64-bit NVIDIA.webp>)
+![find driver](</assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/Screenshot 2025-05-20 at 16-34-12 Driver Results GeForce GTX 850M Linux 64-bit NVIDIA.webp>)
 
 Download the driver
 
-![download driver](<../assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/Screenshot 2025-05-20 at 16-34-22 Linux x64 (AMD64_EM64T) Display Driver 570.153.02 Linux 64-bit NVIDIA.webp>)
+![download driver](</assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/Screenshot 2025-05-20 at 16-34-22 Linux x64 (AMD64_EM64T) Display Driver 570.153.02 Linux 64-bit NVIDIA.webp>)
 
 Once you download the __.run__ file.
 
@@ -323,17 +323,17 @@ sudo sh ./NVIDIA-Linux-x86_64-570.153.02.run
 
 If you skipped previous nouveau driver disable step. You would be asked to disable automatically for you.
 
-![disable nouveau](../assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/Screenshot_20250520_172413.webp)
+![disable nouveau](/assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/Screenshot_20250520_172413.webp)
 
 When asked for **Would you like to register the kernel module sources with DKMS?**  
 Give __YES__.
 
-![register dkms](<../assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/Screenshot 2025-05-20 at 17-21-56 How to Install NVIDIA Drivers on Fedora 40 or 39 - LinuxCapable.webp>)
+![register dkms](</assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/Screenshot 2025-05-20 at 17-21-56 How to Install NVIDIA Drivers on Fedora 40 or 39 - LinuxCapable.webp>)
 
 If asked **Would you like to run the nvidia-xconfig utility to automatically update the x config...?**  
 Give __YES__.
 
-![update x config](<../assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/Screenshot 2025-05-20 at 17-21-47 How to Install NVIDIA Drivers on Fedora 40 or 39 - LinuxCapable.webp>)
+![update x config](</assets/images/2025-05-20-how-to-install-nvidia-drivers-on-fedora/Screenshot 2025-05-20 at 17-21-47 How to Install NVIDIA Drivers on Fedora 40 or 39 - LinuxCapable.webp>)
 
 
 After installation `reboot` the system.

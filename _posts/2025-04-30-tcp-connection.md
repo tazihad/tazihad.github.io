@@ -9,7 +9,7 @@ math: false # math latex syntax
 mermaid: false # diagram & visualizations
 published: true # publish post
 image:
-  path: ../assets/images/2025-04-30-tcp-connection/tcp-connection.webp
+  path: /assets/images/2025-04-30-tcp-connection/tcp-connection.webp
   lqip: data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCw7B5N3Tjv+mfQAAD+3uweJMBO77Ig5B1G75VlIznK/33P8zpRrYQZaBtuDd9b5QeKwkXx2gAA
   alt: TCP Connection Banner
 ---
@@ -94,7 +94,7 @@ John: I'm good! and you?
 
 Bob: Great!
 
-![tcp-session](../assets/images/2025-04-30-tcp-connection/tcp-session-page-001.webp)
+![tcp-session](/assets/images/2025-04-30-tcp-connection/tcp-session-page-001.webp)
 *Figure 3 real life conversation*
 
 
@@ -109,7 +109,7 @@ endpoint2: OK, I want to SYN with you too!
 endpoint1: OK.
 
 
-![SYN+ACK](../assets/images/2025-04-30-tcp-connection/SYN+ACK.webp)
+![SYN+ACK](/assets/images/2025-04-30-tcp-connection/SYN+ACK.webp)
 *Figure 4 TCP starting conversation*
 
 
@@ -120,7 +120,7 @@ As you go foreword in this article you will see that every flag is actually a bi
 
 There is many flags out there but the other flag that we will see often is the FIN flag that stand for finish. If one side of opening conversation want to close the session, he is just send TCP segment message with activated FIN flag.
 
-![FIN+ACK](../assets/images/2025-04-30-tcp-connection/FIN+ACK.webp)
+![FIN+ACK](/assets/images/2025-04-30-tcp-connection/FIN+ACK.webp)
 *Figure 5 TCP ending conversation*
 
 Till now is so simple; to open a session all we need to do is to send **SYN** flag to the other side, throughout the conversation we always approved the receivement of the TCP segment from the other side with activated **ACK**, when we wanna close running session we just sent TCP segment with activated **FIN** flag and that's it.
@@ -167,7 +167,7 @@ There is some more RFC that discuss the TCP and update the protocol, but I want 
 
 Ok, now we going to discuss on the really cool things in TCP segment. The structure of the TCP header look like follow:
 
-![TCP](../assets/images/2025-04-30-tcp-connection/TCP.webp)
+![TCP](/assets/images/2025-04-30-tcp-connection/TCP.webp)
 *Figure 6 TCP header structure*
 
 As you can see the length of the segment is 32 bit long, just please remember that the TCP segment is consists of bits so in reality it's structure of `0` and `1` that represented the values of the filed in the TCP header.
@@ -192,17 +192,17 @@ Let's say that John want to communicate with bob in some sort of protocol that u
 
 1. To start the session John need to send **SYN** flag first because he want to synchronize with Bob about some values that will be used through the conversation. in the SEQ and ACK headers the values will be 0's because nothing of the rules that we saw earlier doesn't apply yet, we have no received data and no received sequence number, and we haven't sent any data and sequence number. because this is the first time we send message in TCP with flag SYN set, the message that send will be count with 1 phantom byte because of the SYN flag.
 
-      ![firstSYN](../assets/images/2025-04-30-tcp-connection/firstSYN.png)
+      ![firstSYN](/assets/images/2025-04-30-tcp-connection/firstSYN.png)
       ***Figure 7** first-SYN from John.*
 
 2. Bob received the TCP segment message, he sees that the message contain flag of SYN in active form so he knows that John want to start conversation with him. Bob respond with two flags: **SYN** and **ACK**, the SYN is because he want to synchronize with John about some values like John did, and the ACK is because he want to inform John that he get the message. In the ACK number header Bob set it to 1 because as you remember the received data is 1 which is the phantom byte and the received sequence number is 0 so it's 1+0=1, so now when John will get this message he will new by the acknowledgement number that the previous message arrived successfully without data lost.
 
-![SYN-and-ACK](../assets/images/2025-04-30-tcp-connection/firstSYN3.webp)
+![SYN-and-ACK](/assets/images/2025-04-30-tcp-connection/firstSYN3.webp)
 *Figure 8 SYN and ACK from Bob with acknowledgement number calculation.*
 
   3. John received the message and sees that Bob what to synchronize with him too, he also see the ACK flag active so he know that Bob actually approved the receivement, because Bob activated SYN flag John count it as phantom byte and add it to the sequence number which is 0, so in the message that John going send to Bob filled with ACK value of 1, and now because John sent previously some message that contain sequence number of 0 and phantom byte of 1 (because of the SYN) John now respond to Bob with TCP segment that contain sequence number of 1. in the flag area John activate only the ACK flag to approved that the segment that came from Bob successfully arrived.
 
-![ACK](../assets/images/2025-04-30-tcp-connection/firstSYN4.webp)
+![ACK](/assets/images/2025-04-30-tcp-connection/firstSYN4.webp)
 *Figure 9 ACK from John with sequence of 1 and acknowledge of 1.*
 
 we will see more of that ack and seq calculation further on.
@@ -229,7 +229,7 @@ we will see more of that ack and seq calculation further on.
 
 **Checksum** - I think that this header is very cool although this is so old algorithm, this is the way to find an error on the TCP segments, the receiver will check the checksum value against the following calculation, if the value is not the same as the checksum value the TCP segment are discard. The calculation are done as follow:
   - **Pseudo Header** which is some headers from the IP packets that are include in the checksum calculation. The header are the **Source address** and **destination address** from the IP packet with **Reserved** filed of 8 bit and **Protocol Type** from IP packet which always be 6 because of the TCP, and **TCP Segment Length**.  
-![pseudo](../assets/images/2025-04-30-tcp-connection/pseudo.webp)
+![pseudo](/assets/images/2025-04-30-tcp-connection/pseudo.webp)
 ***Figure 10** Pseudo Header.*
 
   - **Source Port** from the TCP segment.
@@ -242,7 +242,7 @@ we will see more of that ack and seq calculation further on.
   - **Window Size**
   - **Option** we will discuss this field later in the article.
 
-  ![checksum](../assets/images/2025-04-30-tcp-connection/checksum.webp)
+  ![checksum](/assets/images/2025-04-30-tcp-connection/checksum.webp)
   ***Figure 11** TCP header for checksum calculation.*
 
   After that we take the all field and add it together, the score need to be in length of 4 digits, and after we put all together we calculate the opposite of what we get, in HEX the calculation will be 15 - n = x, the `x` is the new number we need. We can also calculated as following:
@@ -252,7 +252,7 @@ we will see more of that ack and seq calculation further on.
   after the calculation, the value we get in the result this is the checksum value.
 
   let's do real check for example:
-  ![checksum2](../assets/images/2025-04-30-tcp-connection/checksum2.webp)
+  ![checksum2](/assets/images/2025-04-30-tcp-connection/checksum2.webp)
   ***Figure 12** Checksum calculation using Wireshark.*
 
 As you can see the packet that I chose is from some session between my default getaway to one of my hosts. The checksum number is `0x2aa1`, so let's check it our self and find the if the checksum we get is the same checksum we calculate.
@@ -285,27 +285,27 @@ Remember what was the checksum?? yes! `0x2aa1` so the checksum test for this seg
 
 In one PC I opened CMD and type `ftp`, `open 10.0.0.9` and type my user and password and start to copy to my host the test.mp3.
 
-![ftp](../assets/images/2025-04-30-tcp-connection/ftp.webp)
+![ftp](/assets/images/2025-04-30-tcp-connection/ftp.webp)
 ***Figure 13** opening FTP session in command line.*
 
 After the transfer as start I killed it with `ctrl+c` which is activate the **URG** flag.
 
-![ftp5](../assets/images/2025-04-30-tcp-connection/ftp5.png)
+![ftp5](/assets/images/2025-04-30-tcp-connection/ftp5.png)
 ***Figure 14** Killing the FTP session.*
 
 On the other PC you can see that the session has being stopped.
 
-![ftp2](../assets/images/2025-04-30-tcp-connection/ftp2.webp)
+![ftp2](/assets/images/2025-04-30-tcp-connection/ftp2.webp)
 _**Figure 15** FTP session has stopped._
 
 Now, if we look on the captured file we will see some frame that contain in the TCP segment a URG flag (I have done some filtering so this is why you see only one packet).
 
-![ftp3](../assets/images/2025-04-30-tcp-connection/ftp3.webp)
+![ftp3](/assets/images/2025-04-30-tcp-connection/ftp3.webp)
 _**Figure 15** FTP session has stopped._
 
 As you can see URG flag is set, if we look at the data we can find a Hex of `0xF2` which is in decimal 242 which is the DATA MARK that specified by [RFC 854](https://tools.ietf.org/html/rfc854) and it's the **TCP Urgent notification**.
 
-![ftp4](../assets/images/2025-04-30-tcp-connection/ftp4.webp)
+![ftp4](/assets/images/2025-04-30-tcp-connection/ftp4.webp)
 ***Figure 16** TCP Urgent notification.*
 
 
@@ -329,12 +329,12 @@ In this section I'll demonstrate how things are really going on, I have two endp
 
 So John IP address is 10.0.0.8 and Bob IP address is 10.0.0.5, John want to connect Bob and copy from Bob to his machine some file named test.zip (you can actualy download that file from the sniffer captured file LOL).
 
-![cap1](../assets/images/2025-04-30-tcp-connection/cap1.webp)
+![cap1](/assets/images/2025-04-30-tcp-connection/cap1.webp)
 ***Figure 17** John and Bob.*
 
 John send the first TCP segment to synchronize with Bob, you can see that the source port is 49738 and the destination port is 21 which is the FTP service for control connection, the sequence number is 0 because we doesn't ever sent any data and the acknowledgement number is 0 also. At the flag area you can see a SYN activated which mean that John want to start the three way handshake for TCP base connection, the window size value is 8192 which mean that John tells Bob he can handle only 8k at the same time we will see how that goes on the session.
 
-![cap2](../assets/images/2025-04-30-tcp-connection/cap2.webp)
+![cap2](/assets/images/2025-04-30-tcp-connection/cap2.webp)
 ***Figure 18** Wireshark connection - TCP ports 21 and 20*
 
 The checksum is looking good so it's great (you can do the calculation the I show you earlier), in the urgent point the value is 0 becouse we have no urgent data at this moment.
@@ -343,19 +343,19 @@ If you expand the option area you will see some value like the MSS that set on 1
 
 So the starting session look as follow:
 
-![cap3](../assets/images/2025-04-30-tcp-connection/cap3.webp)
+![cap3](/assets/images/2025-04-30-tcp-connection/cap3.webp)
 ***Figure 19** First SYN - Three Way Handshake*
 
 Please remember that because the SYN flag is active this is why we have the 1 phantom bit, so Bob will count it on his response.  
 
 Now Bob going to respond with SYN + ACK flag active and in the acknowledgement number he will specifies `1` because he get sequence of 0 and data of 1 which is the phantom byte, on the sequence number he will specifies `0`.
 
-![cap4](../assets/images/2025-04-30-tcp-connection/cap4.webp)
+![cap4](/assets/images/2025-04-30-tcp-connection/cap4.webp)
 ***Figure 20** Second SYN with ACK - Three Way Handshake*
 
 Let's look on the captured file, we can see the source port is 21 and the destination is 49738 and the ACK is set to 1 as we expected, Bob activated the SYN and ACK flags and the window size value is also 8K like John, but as you can see the checksum is bed, it should be `0x442e` but it's `0x1433`,
 
-![cap5](../assets/images/2025-04-30-tcp-connection/cap5.webp)
+![cap5](/assets/images/2025-04-30-tcp-connection/cap5.webp)
 ***Figure 20** Wireshark second SYN with ACK*
 
 This is happens because of TCP checksum offload, please notice that this error occurs only when Bob packets, well this is because the capture file was taken from Bob machine, so throughout the conversation you will see such an errors only from Bob.
@@ -368,59 +368,59 @@ If you wanna check yourself, just go to this [link](https://wiki.wireshark.org/T
 
 Let's go to the next step in the three way handshake, now John going to approved that he get the TCP segment from Bob and this is close up the TCP three way handshake.
 
-![cap6](../assets/images/2025-04-30-tcp-connection/cap6.webp)
+![cap6](/assets/images/2025-04-30-tcp-connection/cap6.webp)
 ***Figure 21** Last ACK - Three Way Handshake*
 
 
 As you can see the ACK is equal to `1` because John get sequence number of `0` and `1` phantom byte that count as data, the sequence number now is equal to `1` as well because John sent in the passed sequence number of `0` plus some `1` phantom byte.
 
-![cap7](../assets/images/2025-04-30-tcp-connection/cap7.webp)
+![cap7](/assets/images/2025-04-30-tcp-connection/cap7.webp)
 ***Figure 22** Wireshark last ACK*
 
 The session continue with Bob PSH and ACK flags which tells us that on the TCP payload we will find some data that related to FTP (which in our case Bob tell to John that the service are ready for new user). Meanwhile John get login screen so he need to type some user name.
 
-![cap8](../assets/images/2025-04-30-tcp-connection/cap8.webp)
+![cap8](/assets/images/2025-04-30-tcp-connection/cap8.webp)
 _**Figure 23** Login screen._
 
 Please notice that Bob sent to John TCP segment with SEQ that equal to 1 and data bytes size of 42.
 
 John PC respond with ACK about the data that arravied and send another TCP segment that contain a ACK and PSH with data that contain the username guy.
-![cap9](../assets/images/2025-04-30-tcp-connection/cap9.webp)
+![cap9](/assets/images/2025-04-30-tcp-connection/cap9.webp)
 ***Figure 24** ACK and PSH with username.*
 
 As you can see the acknowledgement number from John is 43 because the received sequence number is 1 plus the received data in byte is 42, the sequence number however remains the same because John sent sequence number of 1 and data of 0.
 
-![cap10](../assets/images/2025-04-30-tcp-connection/cap10.webp)
+![cap10](/assets/images/2025-04-30-tcp-connection/cap10.webp)
 ***Figure 25** Sequence and acknowledgement.*
 
 Now Bob response with SYN and PSH active, the ACK is 11 because the received data was 10 and the received sequence was 1, Bob sequence number is 43 related to the sequence number that was sent before bluse the data that was 0.
 
-![cap11](../assets/images/2025-04-30-tcp-connection/cap11.webp)
+![cap11](/assets/images/2025-04-30-tcp-connection/cap11.webp)
 _**Figure 26** Bob respond again._
 
 John response with sequence of 11 because he already sent sequence of 1 and 10 data bytes, the acknowledgement number is 76 because John got a data bytes of 33 and sequence number of 43.
 
-![cap12](../assets/images/2025-04-30-tcp-connection/cap12.webp)
+![cap12](/assets/images/2025-04-30-tcp-connection/cap12.webp)
 _**Figure 27** Sequence of 11 and acknowledgement of 76._
 
 John send more TCP segment with the same values but with data bytes of 13 with password for the FTP session, please note that this is why FTP isn't secure, the password pass over the net in clear text form.
 
-![cap14](../assets/images/2025-04-30-tcp-connection/cap14.webp)
+![cap14](/assets/images/2025-04-30-tcp-connection/cap14.webp)
 _**Figure 28** FTP password in clear text._
 
 Please remember that this time John send again data so is a PSH plus ACK.
 
-![cap13](../assets/images/2025-04-30-tcp-connection/cap13.webp)
+![cap13](/assets/images/2025-04-30-tcp-connection/cap13.webp)
 _**Figure 28** TCP session continue._
 
 The acknowledgement and sequence numbers calculate again and Bob send this time ACK of 11 and SEQ of 76, the data bytes are 20 and Bob actually approved that John log in and in the flags are PSH and ACK.
 
-![cap15](../assets/images/2025-04-30-tcp-connection/cap15.webp)
+![cap15](/assets/images/2025-04-30-tcp-connection/cap15.webp)
 _**Figure 29** Bob respond again._
 
 The acknowledgement that John specifies is 96 and the sequence is 24, this is just ACK so there is no data in this TCP segment. the other packet contain some data in upper layer.  
 
-![cap16](../assets/images/2025-04-30-tcp-connection/cap16.webp)
+![cap16](/assets/images/2025-04-30-tcp-connection/cap16.webp)
 _**Figure 30** Two TCP segments from John._
 
 So the session will go in that way, just remember the rules we saw earlier:
@@ -431,27 +431,27 @@ If we make some TCP session that pass through big amount of data we will see the
 
 As the session continue you will see the test.zip file transfer to John from Bob, for now I want to jump ahead to packet number 436. In this TCP segment we will see the FIN flag in active form from Bob to John, the flags that are active are FIN, PSH and ACK, the TCP payload is 40 bytes, the sequence number is 234 and acknowledgement number is 67.
 
-![cap17](../assets/images/2025-04-30-tcp-connection/cap17.webp)
+![cap17](/assets/images/2025-04-30-tcp-connection/cap17.webp)
 _**Figure 31** FIN flag._
 
 The follow TCP segment from John contain just ACK and immediately John send also FIN and ACK segment. The first segment contain values of 275 at ACK number because we got sequence of 234 and more data byte of 40 and we also have phantom byte to count because this is the first the FIN flag is active from Bob side. The sequence number is 67 because of packet 435 that contain sequence number of 67 with data of 0 bytes.
 
-![cap18](../assets/images/2025-04-30-tcp-connection/cap18.webp)
+![cap18](/assets/images/2025-04-30-tcp-connection/cap18.webp)
 _**Figure 32** FIN flag is the phantom this time._
 
 The second packets stay with the same value and the flags as we said are FIN with ACK active.
 
-![cap19](../assets/images/2025-04-30-tcp-connection/cap19.webp)
+![cap19](/assets/images/2025-04-30-tcp-connection/cap19.webp)
 _**Figure 33** FIN flag is the phantom this time._
 
 Bob respose with ACK and that's it the session end.
 
-![cap20](../assets/images/2025-04-30-tcp-connection/cap20.webp)
+![cap20](/assets/images/2025-04-30-tcp-connection/cap20.webp)
 _**Figure 34** The ending ACK._
 
 Let's look at the diagram to see the numbers in the ending session.
 
-![cap21](../assets/images/2025-04-30-tcp-connection/cap21.webp)
+![cap21](/assets/images/2025-04-30-tcp-connection/cap21.webp)
 _**Figure 34** TCP ending session._
 
 **Summary**
@@ -470,53 +470,53 @@ So we have three flags as follow:
 
 Let's say that one side send 3 packets to the other side.
 
-![cap22](../assets/images/2025-04-30-tcp-connection/cap22.webp)
+![cap22](/assets/images/2025-04-30-tcp-connection/cap22.webp)
 _**Figure 35** TCP ending session._
 
 if some congestion was occur the router in the middle discard the packets.
 
-![cap23](../assets/images/2025-04-30-tcp-connection/cap23.webp)
+![cap23](/assets/images/2025-04-30-tcp-connection/cap23.webp)
 _**Figure 36** TCP ending session._
 
 So the receiver response with ACK that approved only the first arrived TCP segment in our case, and in the SACK filed he specifies the segments that arrived after the first one, in our case it's segment 3 so the sender knows that the segment 2 is missing and lost during the transport, so the sender will send the segments again.
 
-![cap24](../assets/images/2025-04-30-tcp-connection/cap24.webp)
+![cap24](/assets/images/2025-04-30-tcp-connection/cap24.webp)
 _**Figure 37** The receiver approved for segment 1 and 3._
 
-![cap25](../assets/images/2025-04-30-tcp-connection/cap25.webp)
+![cap25](/assets/images/2025-04-30-tcp-connection/cap25.webp)
 _**Figure 38** The receiver resend segment 2._
 
 However if the router in the middle support in ECN he will set the ECN flags in the IP packets, this flags is part of DSCP (DiffServ) that used for Quality Of Service. You may ask why the flags set in the IP packet and not in the TCP segment, so please remember that the router working at most at layer 3 and doesn't open the packets to see the TCP segment, so the flags set must be done in layer 3, so we have two bits that are called ECN-Capable Transport as follow:
 
-![cap26](../assets/images/2025-04-30-tcp-connection/cap26.webp)
+![cap26](/assets/images/2025-04-30-tcp-connection/cap26.webp)
 _**Figure 39** IP packets headers._
 
  - Not-ECT - If the two bits are 0's this mean that there is no support in ECN.
  - ECT - If the one of the bits are 1 this mean that there is support in ECN.
  - CE - If both bits set to 1 it's mean that congestion occur.
 
-![cap27](../assets/images/2025-04-30-tcp-connection/cap27.png)
+![cap27](/assets/images/2025-04-30-tcp-connection/cap27.png)
  _**Figure 40** ECN bits._
 
 To summaries all thing together let's look what really happens when congestion occur:
 - The sender send some packets to the other endpoint with ECN Capable set in IP packets .
 
-![cap28](../assets/images/2025-04-30-tcp-connection/cap28.webp)
+![cap28](/assets/images/2025-04-30-tcp-connection/cap28.webp)
 _**Figure 41** ECN capable._
 
 - An ECN-capable router detects impending congestion, is usual case the router will start to drop packets, but in our case the router that an ECT codepoint is set in the packet so instead of dropping the packet, the router chooses to set the CE codepoint in the IP header and forwards the packet.
 
-![cap29](../assets/images/2025-04-30-tcp-connection/cap29.webp)
+![cap29](/assets/images/2025-04-30-tcp-connection/cap29.webp)
 _**Figure 42** The router inform about the congestion._
 
 - The receiver receives the packet with the CE codepoint set, and sets the ECN-Echo flag in its next TCP ACK sent to the sender.
 
-![cap30](../assets/images/2025-04-30-tcp-connection/cap30.webp)
+![cap30](/assets/images/2025-04-30-tcp-connection/cap30.webp)
 _**Figure 43** ECN-Echo flag is set._
 
 - The sender receives the TCP ACK with ECN-Echo set, and reacts to the congestion as if a packet had been dropped. that mean he will decrease the window size during the session.
 
-![cap31](../assets/images/2025-04-30-tcp-connection/cap31.webp)
+![cap31](/assets/images/2025-04-30-tcp-connection/cap31.webp)
 _**Figure 44** The sender going to decrease the  window size._
 
 - So the sender sets the CWR flag in the TCP header of the next packet sent to the receiver to acknowledge its receipt of and reaction to the ECN-Echo flag.
@@ -526,7 +526,7 @@ In some special cases the the ECN flags in the IP packets can be override by unm
 
 So this leave us with 3 bits reserved and 9 bits used for flags in TCP segment.
 
-![cap32](../assets/images/2025-04-30-tcp-connection/cap32.webp)
+![cap32](/assets/images/2025-04-30-tcp-connection/cap32.webp)
 _**Figure 45** Reserved and flags._
 
 **summary**
@@ -543,34 +543,34 @@ OK guys, if you read so far, you have pritty good knowledge about the TCP sessio
 To perform this attack I'm going to use msfconsole in my Linux Kali distribution, on the terminal type `msfconsole` and Metasploit Framework will open. After the msfconsole will open type `use auxiliary/dos/tcp/synflood`
 
 
-![kali1](../assets/images/2025-04-30-tcp-connection/kali1.webp)
+![kali1](/assets/images/2025-04-30-tcp-connection/kali1.webp)
 _**Figure 46** Metasploit Framework._
 
 To see the options we have just type `show options`, we will setup the RHOST which is the ip address of our victim and we use port 80 as default.
 
-![kali2](../assets/images/2025-04-30-tcp-connection/kali2.webp)
+![kali2](/assets/images/2025-04-30-tcp-connection/kali2.webp)
 _**Figure 47** rhost._
 
 The attack will going to be on 10.0.0.138 port 80 which is the http service. To initiate the attack we only need to type `exploit` and hit enter.
 
-![kali3](../assets/images/2025-04-30-tcp-connection/kali3.webp)
+![kali3](/assets/images/2025-04-30-tcp-connection/kali3.webp)
 _**Figure 48** exploit._
 
 now if I trying to get to my router at http service I will not be able to connect and I will get an error after long time.
 
-![connecting_error](../assets/images/2025-04-30-tcp-connection/connecting_error.webp)
+![connecting_error](/assets/images/2025-04-30-tcp-connection/connecting_error.webp)
 _**Figure 49** HTTP connecting error._
 
 tcp.flags.ack == 1
 
 I opened Wireshark and I saw many TCP segment that contain only SYN flag in active form.
 
-![wireshark_sniffing_with_SYN](../assets/images/2025-04-30-tcp-connection/wireshark_sniffing_with_SYN.webp)
+![wireshark_sniffing_with_SYN](/assets/images/2025-04-30-tcp-connection/wireshark_sniffing_with_SYN.webp)
 _**Figure 50** Wireshark sniffing with SYN._
 
 I done the same attack but now I setup my source IP, if you doesnt set the source IP it will be randomize, My filter is `tcp.flags.ack == 1 || tcp.flags.syn == 1` and we can see the SYN and ACK session between my DG and my Kali host.
 
-![kali4](../assets/images/2025-04-30-tcp-connection/kali4.webp)
+![kali4](/assets/images/2025-04-30-tcp-connection/kali4.webp)
 _**Figure 51** More sniffing._
 
 To kill the attack just type ctrl+c, in my case after I killed the attack I was able to connect my DG.

@@ -9,7 +9,7 @@ math: false # math latex syntax
 mermaid: false # diagram & visualizations
 published: true # publish post
 image:
-  path: ../assets/images/2025-04-08-tensorflow-and-pytorch-setup-guide-with-cuda/tensorflow-pytorch-jupyter-setup.webp
+  path: /assets/images/2025-04-08-tensorflow-and-pytorch-setup-guide-with-cuda/tensorflow-pytorch-jupyter-setup.webp
   lqip: data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZgC06Brh1XH01rtaRAAA/s2CZmXU7Rq/LytsmtAAn9f+iXPml+TEg2P1lXrRPcCQyzyZonCNhOAA
   alt: Tensorflow, PyTorch
 ---

@@ -9,7 +9,7 @@ math: false # math latex syntax
 mermaid: false # diagram & visualizations
 published: true # publish post
 image:
-  path: ../assets/images/2025-05-04-setup-flatpak-vscode-devcontainer-podman-wayland-gui/devcontainer-poster.webp
+  path: /assets/images/2025-05-04-setup-flatpak-vscode-devcontainer-podman-wayland-gui/devcontainer-poster.webp
   lqip: data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYgC7AB07rW+973ydAVAAAP7k1krNAOIvhDygB2K00bKyOo49JGYLO58qLuwRueizRVly6R2444VlPyyTPFOkpgV0qNOuh2QAAA==
   alt: devcontainer wayland poster
 ---

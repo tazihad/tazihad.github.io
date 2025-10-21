@@ -9,7 +9,7 @@ math: false # math latex syntax
 mermaid: false # diagram & visualizations
 published: true # publish post
 image:
-  path: ../assets/images/2025-09-11-how-to-run-ping-command/ping-cover.webp
+  path: /assets/images/2025-09-11-how-to-run-ping-command/ping-cover.webp
   lqip: data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAwCdASoUAAsAPzmGulQvKSWjMAgB4CcJagAu/8B4zlZzvbelEgAA/sBAiBEgJR3R42mCDXCflrd4ItKuRH//47dkSegx/fJg8Ia3XCMRnVlexcZN6kDhTIcAAA==
   alt: How to run ping
 ---
@@ -30,7 +30,7 @@ ping google.com
 
 By default, this command keeps running continuously. To stop it, press Ctrl + C on Windows or Command + C on Mac.
 
-![ping google](../assets/images/2025-09-11-how-to-run-ping-command/Screenshot_20250912_033641.webp)
+![ping google](/assets/images/2025-09-11-how-to-run-ping-command/Screenshot_20250912_033641.webp)
 
 ### 2. Ping an IP Address
 You can ping a specific IP address to check your internet connection. For example, try pinging a popular DNS server:

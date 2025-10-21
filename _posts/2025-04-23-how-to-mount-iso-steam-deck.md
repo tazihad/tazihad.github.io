@@ -9,7 +9,7 @@ math: false # math latex syntax
 mermaid: false # diagram & visualizations
 published: true # publish post
 image:
-  path: ../assets/images/2025-04-23-how-to-mount-iso-steam-deck/how-to-mount-iso-steam-deck-banner.webp
+  path: /assets/images/2025-04-23-how-to-mount-iso-steam-deck/how-to-mount-iso-steam-deck-banner.webp
   lqip: data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABwBACdASoUAAsAPzmGuVOvKSWisAgB4CcJbACdMoRgAAwkmq8IkSZajzWcAADfdiG5UembGQD9JXbY+yA3stbfmKvGl6eIRLmx5niQIRnx8GaVXv4O2XqmvTNVXYgCAAA=
   alt: how-to-mount-iso-steam-deck-bannerc
 ---
@@ -33,40 +33,40 @@ To mount ISO files on your Steam Deck, you don't need much—just a little time 
 ##  How to mount an ISO file on Steam Deck 
 
 **Jump into Desktop Mode to Kick Things Off**
-![desktop-mode](../assets/images/2025-04-23-how-to-mount-iso-steam-deck/desktop-mode.webp)
+![desktop-mode](/assets/images/2025-04-23-how-to-mount-iso-steam-deck/desktop-mode.webp)
 
 1. Press and hold the power button until the menu shows up, then choose 'Switch to Desktop'.
 > Or, just press the Steam button to open the menu, scroll down to Power, and select it.
 
 2. Open the **Dolphin** app.
-![dolphin app](../assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_185332.webp)
+![dolphin app](/assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_185332.webp)
 
 3. From the **3 dot hamburger icon** go to **Configure** -> **Configure Dolphin...**.
-![hamburger menu](../assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_185447.webp)
+![hamburger menu](/assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_185447.webp)
 
 4. From the **Configure** go to **Context Menu** -> **Download New Services...**
-![context menu](../assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_185811.webp)
+![context menu](/assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_185811.webp)
 
 5. When you click **Download New Services...** a new window will pop up. It's a store for **Dolphin Services**.
-![services store](../assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_190012.webp)
+![services store](/assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_190012.webp)
 
 6. Search for **Mount Unmount ISO** by **tazihad**.
-![mount unmount iso](../assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_190122.webp)
+![mount unmount iso](/assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_190122.webp)
 
 7. Install the Plugin.
-![install plugin](../assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_190656.webp)
+![install plugin](/assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_190656.webp)
 
 8. **Close** and **re open** Dolphin File Manager.
 
 9. Now **Right click** on any ISO or IMG file. You will see Mount, Unmount, Unmout All options.
-![right click](../assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_191939.webp)
+![right click](/assets/images/2025-04-23-how-to-mount-iso-steam-deck/Screenshot_20250423_191939.webp)
 **Mount:** Mounts the ISO file on `/run/media/$USER` location.  
 **Unmout:** Unmount the ISO.  
 **Unmount All:** Unmounts all mounted ISO from system.  
 > Somtimes mount don't appear on Dolphin unless close and reopen dolphin again. It's a well known dolphin [bug](https://bugs.kde.org/show_bug.cgi?id=495600). If it doesn't appear from dolphin go to `/run/media/$USER` location you will see the mounted folder.
 
 10. You can find the mounted iso on left side under **Devices** in Dolphin File Manager. And you can browse through it just like any other folder on your Steam Deck.
-![mounted iso tree](../assets/images/2025-04-23-how-to-mount-iso-steam-deck/mounts.webp)
+![mounted iso tree](/assets/images/2025-04-23-how-to-mount-iso-steam-deck/mounts.webp)
 
 ## Now enjoy playing games straight from ISO files on your Steam Deck—easy and smooth!
 

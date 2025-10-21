@@ -9,7 +9,7 @@ math: false # math latex syntax
 mermaid: false # diagram & visualizations
 published: true # publish post
 image:
-  path: ../assets/images/2025-09-25-fedora-atomic-silverblue-kinoite-bazzite-usage/cover.webp
+  path: /assets/images/2025-09-25-fedora-atomic-silverblue-kinoite-bazzite-usage/cover.webp
   lqip: data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAwCdASoUAAsAPzmGulOvKKWisAgB4CcJYgCw7Bcx8Vf7V27oAAD6c2jTpPubDweSQEc6d8Qeggy3Oz7QfRuEYK9UUS7FofziSlzBraW0oAAA
   alt: fedora atomic usage
 ---
