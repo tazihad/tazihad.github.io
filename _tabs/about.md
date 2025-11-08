@@ -14,7 +14,11 @@ order: 4
 - GitHub: [@tazihad](https://github.com/tazihad)
 - Location: Dhaka, Bangladesh
 
-Projects:
- - KDE Plugin [Mount Unmount ISO](https://www.pling.com/p/2199428/)
- - ByeDPI Docker Image on [Dockerhub](https://hub.docker.com/r/tazihad/byedpi)
- - Contribute in Manjaro Linux [splash theme](https://gitlab.manjaro.org/artwork/themes/breath)
+## 🧩 Projects
+
+- 🖥️ **[Mount Unmount ISO](https://www.pling.com/p/2199428)** — KDE plugin with **40K+ downloads**  
+- 🐳 **[ByeDPI Docker Image](https://hub.docker.com/r/tazihad/byedpi)** — Dockerized ByeDPI with **100K+ pulls**  
+- 🎨 **[Manjaro Linux Bamboo Splash Theme](https://gitlab.manjaro.org/artwork/themes/breath)** — Contributed to Manjaro’s official *Breath* splash theme  
+- 🦊 **[Bookmark Icon Only](https://addons.mozilla.org/en-US/firefox/addon/bookmark-icon-only)** — Firefox extension to show bookmarks as icons only  
+- 🗒️ **[Easy Keep View](https://publish.obsidian.md/hub/02+-+Community+Expansions/02.05+All+Community+Expansions/Plugins/easy-keep-view)** — Obsidian plugin inspired by *Google Keep* interface with **3K+ downloads**
+
