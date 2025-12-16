@@ -18,7 +18,10 @@ Step by step guide to setu IDM with extension
 Download latest release of IDM flatpak from [github.com/tazihad/flatpaks/releases](https://github.com/tazihad/flatpaks/releases).
 Install using 
 ```sh
-flatpak install --user ~/Downloads/idm.flatpak
+curl -L -o idm.flatpak https://github.com/tazihad/flatpaks/releases/download/wow64/idm.flatpak
+flatpak install flathub org.freedesktop.Platform//25.08
+flatpak install flathub org.winehq.Wine//wow64-25.08
+flatpak install --user idm.flatpak
 ```
 
 ### Extension setup
