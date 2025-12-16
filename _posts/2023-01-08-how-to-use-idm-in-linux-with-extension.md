@@ -42,6 +42,8 @@ Executable Name: `/home/user_name/bin/idm`
 Arguments: `[HREF]`  
 You can find the `idm`executable [here](https://github.com/tazihad/idm-linux/blob/master/external-download-button/native-browser/idm). Make sure it had executable permission. `chmod +x idm`.  
 ![extension setup for native firefox](/assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20251214_003531.webp)
+- Check **All Contexts**  
+![alt text](/assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20251216_103004.webp)
 - Make sure you click **Add Application** below in List of Application to save the settings.
 ![alt text](/assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20251214_004640.webp)
 
@@ -58,8 +60,11 @@ Executable Name: `/home/zihad/.var/app/org.mozilla.firefox/data/bin/idm`
 Arguments: `[HREF]`  
 You can find the `idm`executable [here](https://github.com/tazihad/idm-linux/blob/master/external-download-button/flatpak-browser/idm). Make sure it had executable permission. `chmod +x idm`.  
 ![alt text](/assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20251214_003331.webp)
+- Check **All Contexts**  
+![alt text](/assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20251216_103004.webp)
 - Make sure you click **Add Application** below in List of Application to save the settings.
 ![alt text](/assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20251214_004640-1.webp)
 
 That's it. Now you can download with idm extension.
 ![alt text](/assets/images/2023-01-08-how-to-use-idm-in-linux-with-extension/Screenshot_20251214_005605.webp)
+
