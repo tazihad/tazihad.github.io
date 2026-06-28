@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "tazihad.github.io devcontainer",
     "build": {
         "dockerfile": "Dockerfile"
@@ -37,3 +38,33 @@
 // item: _posts/**
 // value: /assets/images/${documentBaseName}/${fileName}
 //
+=======
+  "name": "Jekyll",
+  "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
+  "onCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      },
+      "extensions": [
+        // Liquid tags auto-complete
+        "killalau.vscode-liquid-snippets",
+        // Liquid syntax highlighting and formatting
+        "Shopify.theme-check-vscode",
+        // Shell
+        "timonwong.shellcheck",
+        "mkhl.shfmt",
+        // Common formatter
+        "EditorConfig.EditorConfig",
+        "esbenp.prettier-vscode",
+        "stylelint.vscode-stylelint",
+        "yzhang.markdown-all-in-one",
+        // Git
+        "mhutchie.git-graph"
+      ]
+    }
+  }
+}
+>>>>>>> v7.6.0
