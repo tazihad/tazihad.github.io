@@ -4,6 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
+<<<<<<< HEAD
 [![tazihad's GitHub stats](https://github-readme-stats.vercel.app/api?username=tazihad)](https://github.com/tazihad)
 {: .prompt-tip }
 
@@ -22,3 +23,7 @@ order: 4
 - 🦊 **[Bookmark Icon Only](https://addons.mozilla.org/en-US/firefox/addon/bookmark-icon-only)** — Firefox extension to show bookmarks as icons only  
 - 🗒️ **[Easy Keep View](https://publish.obsidian.md/hub/02+-+Community+Expansions/02.05+All+Community+Expansions/Plugins/easy-keep-view)** — Obsidian plugin inspired by *Google Keep* interface with **3K+ downloads**
 
+=======
+> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+{: .prompt-tip }
+>>>>>>> v7.6.0
