@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hidden files
 .*
 !.git*
@@ -13,6 +14,14 @@
 .bundle
 vendor
 Gemfile.lock
+=======
+# Bundler cache
+.bundle
+vendor
+Gemfile.lock
+
+# Jekyll cache
+>>>>>>> v7.6.0
 .jekyll-cache
 .jekyll-metadata
 _site
@@ -26,7 +35,10 @@ package-lock.json
 
 # IDE configurations
 .idea
+<<<<<<< HEAD
 .vscode/
+=======
+>>>>>>> v7.6.0
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
@@ -36,6 +48,13 @@ package-lock.json
 _sass/vendors
 assets/js/dist
 
+<<<<<<< HEAD
 # Local tools
 tools/
 .devcontainer/post-create.sh
+=======
+# Hidden system files
+*~
+.DS_Store
+Thumbs.db
+>>>>>>> v7.6.0
