@@ -4,14 +4,14 @@ description: A complete step-by-step post-installation guide for Ubuntu 26.04 LT
 date: 2026-06-27 17:10:00 +0600
 categories: [linux, ubuntu]
 tags: [linux, ubuntu, tutorial, post-install]
-pin: false # pin post
+pin: true # pin post
 math: false # math latex syntax
 mermaid: false # diagram & visualizations
 published: true # publish post
 image:
   path: /assets/images/2026-06-27-ubuntu-26-04-post-install-guide/banner.webp
-  lqip: data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAwCdASoUAAsAP3Ggxli0q6ejsAgCkC4JZQC+SBukLqFsxlu6vv4AAP7ZT0Nw180AcsjcpOd1squzNVrZBq+XqLh868aAAAA=
-  alt: Ubuntu 26.04 LTS post install guide banner featuring the Ubuntu logo and installation HUD.
+  lqip: data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQBACdASoUAAsAPpE6mEeloyKhMAgAsBIJQBOmUABqom7k5IV/ssZiAAD+8r6cQ83YevW2P7moqXlGG+R02YydrK1n8voSv623Rxv6CkIL9xCKIAAAiH+4H2VAAA==
+  alt: Ubuntu 26.04 LTS desktop environment after a clean installation
 ---
 
 Ubuntu 26.04 LTS (**Resolute Raccoon**) has arrived, bringing a polished GNOME desktop experience, updated Linux kernel, improved security profiles, and long-term support for the next five years. 

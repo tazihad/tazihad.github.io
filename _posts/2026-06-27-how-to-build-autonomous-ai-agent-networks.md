@@ -4,7 +4,7 @@ description: Prompt engineering was just a bridge. The future belongs to decentr
 date: 2026-06-27 16:56:00 +0600
 categories: [ai, agents]
 tags: [ai, agents, software-architecture, python, tutorial]
-pin: true # pin post
+pin: false # pin post
 math: false # math latex syntax
 mermaid: true # diagram & visualizations
 published: true # publish post
