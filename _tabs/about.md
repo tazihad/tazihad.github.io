@@ -16,9 +16,10 @@ order: 4
 
 ## 🧩 Projects
 
+- 🐍 **[@tazihad/bengal-download-manager](https://github.com/tazihad/bengal-download-manager)** — Multi-threaded Classic Download Manager  
 - 🖥️ **[Mount Unmount ISO](https://www.pling.com/p/2199428)** — KDE plugin with **40K+ downloads**  
 - 🐳 **[ByeDPI Docker Image](https://hub.docker.com/r/tazihad/byedpi)** — Dockerized ByeDPI with **100K+ pulls**  
 - 🎨 **[Manjaro Linux Bamboo Splash Theme](https://gitlab.manjaro.org/artwork/themes/breath)** — Contributed to Manjaro’s official *Breath* splash theme  
 - 🦊 **[Bookmark Icon Only](https://addons.mozilla.org/en-US/firefox/addon/bookmark-icon-only)** — Firefox extension to show bookmarks as icons only  
-- 🗒️ **[Easy Keep View](https://publish.obsidian.md/hub/02+-+Community+Expansions/02.05+All+Community+Expansions/Plugins/easy-keep-view)** — Obsidian plugin inspired by *Google Keep* interface with **3K+ downloads**
+- 🗒️ **[Easy Keep View](https://publish.obsidian.md/hub/02+-+Community+Expansions/02.05+All+Community+Expansions/Plugins/easy-keep-view)** — Obsidian plugin inspired by *Google Keep* interface [...] 
 
