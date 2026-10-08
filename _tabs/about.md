@@ -10,7 +10,7 @@ order: 4
 📞 Contact Information
 
 - Email: tazihad@gmail.com
-- LinkedIn: [linkedin.com/in/tazihad](https://www.linkedin.com/in/tazihad)
+- LinkedIn: [linkedin.com/in/tazihad](https://www.linkedin.com/in/tarek-zihad-964213400/)
 - GitHub: [@tazihad](https://github.com/tazihad)
 - Location: Dhaka, Bangladesh
 
