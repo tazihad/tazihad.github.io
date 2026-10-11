@@ -243,3 +243,4 @@ jekyll_admin:
 
 include:
   - ads.txt
+  - .well-known
